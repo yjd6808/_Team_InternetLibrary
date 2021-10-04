@@ -1,0 +1,205 @@
+@startuml
+
+
+package bean {
+    abstract class PageData {
+        페이징 처리되는 하는 오브젝트를 묶기 위한 클래스
+        --
+        - int id - Primary Key 값
+    }
+
+    abstract class BoardBean {
+        게시글 유형의 클래스
+        --
+        - String title - 게시글 제목
+        - String content - 게시글 내용
+        - Date createdDate - 게시글이 생성된 날짜
+        - int visitCount - 조회수
+    }
+
+    class RequestBoardBean {
+        도서 신청 게시글
+        --
+        추상 클래스 BoardBean의 속성을 그대로 사용하기
+        때문에 개별속성은 없습니다.
+    }
+    class ReviewBoardBean {
+        도서 후기 게시글
+        --
+        - int likeCount - 좋아요 수
+        - float score - 이 게시글에서 준 평점
+        - int bookId - 이 게시글이 후기를 남긴 도서
+    }
+
+    class CommentBean {
+        댓글
+        --
+        - int boardType - 후기 게시글인지, 신청 게시글인지
+        - int boardId - 댓글이 달린 게시글 ID값
+        - String content - 게시글 내용
+        - int userId - 게시글을 단 유저의 ID값
+    }
+
+    class BookBean  {
+        도서 데이터
+        --
+        - String name - 책 제목
+        - String writerName - 책 저자 이름
+        - int ageLimit - 나이 제한
+        - int borrowPoint - 대여시 소모 포인트
+        - int buyPoint - 구매시 소모 포인트
+        - int imageId - 이미지 ID 값
+        - int fileId - 파일 ID 값
+        - float score - 도서 평점
+    }
+
+    class MyBookBean  {
+        소장 또는 대여중인 도서 정보
+        --
+        - int bookId - 소장 또는 대여중인 책 ID
+        - Date startDate - 대여 시작일
+        - Date endDate - 대여 종료일
+    }
+
+    class ChargePointLogBean {
+        포인트 충전 내역
+        --
+        int price - 가격
+        int chargePoint - 충전한 포인트
+        int chargeDate - 충전일
+    }
+
+    class UsePointLogBean {
+        포인트 이용 내역
+        --
+        int usePoint - 사용한 포인트
+        Date useDate - 사용한 날짜
+        String content - 내역
+    }
+
+    class UserBean {
+        도서관에 로그인한 유저 정보
+        세션에 저장한 후 관리할 것
+        --
+        - String id - 아이디
+        - String password - 비밀번호
+        - String nickName - 닉네임
+        - String email - 이메일
+        - Date birthDate - 생일
+        - Date lastLoginDate - 마지막 접속시간
+        - Date registrationDate - 회원가입일
+    }
+
+    RequestBoardBean -up-|> BoardBean
+    ReviewBoardBean -up-|> BoardBean
+
+    BoardBean -up-|> PageData
+    CommentBean -up-|> PageData
+    BookBean -up-|> PageData
+
+    UsePointLogBean -down-|> PageData
+    ChargePointLogBean -down-|> PageData
+    MyBookBean -down-|> PageData
+}
+
+package pagination {
+    class Page<T implements PageData> {
+        페이징 기능을 수행
+        --
+        - int pageCount - 총 페이지 수
+        - int pageNumber - 현재 페이지 번호
+        - PageOption pageOption - 페이지 옵션
+        - ArrayList<T> datas - 페이지 안의 데이터
+        --
+        + isLastPage() : bool - 마지막 페이지인가?
+        + isFirstPage() : bool - 첫번째 페이지인가?
+        + ... (생략)
+    }
+
+    class PageOption {
+        - int pageSize - 한 페이지당 게시글 수
+        - int pageLimit - 보여지는 페이지 수
+    }
+
+    Page --> PageOption
+}
+
+package database {
+
+    class BoardILDBManager <<싱글톤>> {
+        게시글 관련 DB 작업 처리
+        --
+        - InternetLibraryDataBase database
+        --
+        + insertBoard()
+        + updateBoard()
+        + ... (생략)
+    }
+
+    class CommentILDBManager <<싱글톤>> {
+        댓글 관련 DB 작업 처리
+        --
+        - InternetLibraryDataBase database
+        --
+        + insertComment()
+        + updateComment()
+        + ... (생략)
+    }
+
+    class LogILDBManager <<싱글톤>> {
+        내역 관련 DB 작업 처리
+        --
+        - InternetLibraryDataBase database
+        --
+        + insertLog()
+        + selectLog()
+        + ... (생략)
+    }
+
+    class UserILDBManager <<싱글톤>> {
+        유저 관련 DB 작업 처리
+        --
+        - InternetLibraryDataBase database
+        --
+        + selectUserInfo()
+        + ... (생략)
+    }
+
+    class BookILDBManager <<싱글톤>> {
+        도서 관련 DB 작업 처리
+        --
+        - InternetLibraryDataBase database
+        --
+        + selectBooks()
+        + ... (생략)
+    }
+
+    class InternetLibraryDataBase {
+        인터넷 서점 관련 DB CRUD를 처리하는 클래스
+        + getConnection()
+    }
+
+
+
+    BoardILDBManager -up-> "1" InternetLibraryDataBase
+    CommentILDBManager -up-> "1" InternetLibraryDataBase
+    LogILDBManager -up-> "1" InternetLibraryDataBase
+
+    UserILDBManager -down-> "1" InternetLibraryDataBase
+    BookILDBManager -down-> "1" InternetLibraryDataBase
+}
+
+package util {
+    class Encoder {
+        한글 변환을 도와주는 클래스
+        --
+        + toKorean()
+        + encodeUrlToKorean()
+    }
+}
+
+bean <-u- database
+pagination -d-> bean
+
+
+@enduml
