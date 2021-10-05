@@ -1,10 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="98B75B12-E529-53A8-E36B-0F7D5A794129" name="use point log">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="31CC623F-1911-F94E-EEA9-A930BC2475DF" name="use point log">
 <createdBy>jungdo</createdBy>
-<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<createdTime>2021-10-05 09:47:42 UTC</createdTime>
 <generatorID>7C1AA90A-91F3-A6F4-F356-8C6852F3DDE8</generatorID>
 <ownerDesignName>InternetLibrary</ownerDesignName>
 <engineerTo>
+<item key="9E52C774-6ECA-0B52-CA35-050BDE7AA6F1" value="true"/>
 <item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -16,27 +17,29 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="user uid" id="1741F9C7-8FD7-310F-EEC3-B1ED1E6F4801">
+<Attribute name="user uid" id="D6931378-BCA0-118B-34A9-E02C783210B2">
 <createdBy>jungdo</createdBy>
-<createdTime>2021-10-05 01:01:03 UTC</createdTime>
-<generatorID>14F5737D-7299-084E-A0E1-BDAF8B0C783F</generatorID>
+<createdTime>2021-10-05 09:47:42 UTC</createdTime>
+<generatorID>A3FC3EAC-0F27-2F70-40D5-C0B6AA016FD2</generatorID>
 <ownerDesignName>InternetLibrary</ownerDesignName>
 <engineerTo>
+<item key="9E52C774-6ECA-0B52-CA35-050BDE7AA6F1" value="true"/>
 <item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
 </engineerTo>
-<referedAttribute>DEF75A65-0226-4935-E89F-1B88BF6B12A9</referedAttribute>
+<referedAttribute>4FBC99A0-D34C-BFC1-8778-2A6FB929916D</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>18</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="use point" id="ACA7A1E7-74E3-9C71-B0E1-B632007A7E53">
+<Attribute name="use point" id="A9718ACD-F4B8-1111-D59D-935F89B98863">
 <createdBy>jungdo</createdBy>
-<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<createdTime>2021-10-05 09:47:42 UTC</createdTime>
 <generatorID>B89A9FA4-866E-04BF-7D68-5C54CBE88700</generatorID>
 <ownerDesignName>InternetLibrary</ownerDesignName>
 <engineerTo>
+<item key="9E52C774-6ECA-0B52-CA35-050BDE7AA6F1" value="true"/>
 <item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
@@ -45,12 +48,13 @@
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="use date" id="56360D37-CC64-7B1B-524A-D236CB46FB29">
+<Attribute name="use date" id="C254E986-A5A9-097C-27B1-565F61E74CAB">
 <createdBy>jungdo</createdBy>
-<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<createdTime>2021-10-05 09:47:42 UTC</createdTime>
 <generatorID>93DBCC4C-F513-EA19-0AA5-46990AE98BB4</generatorID>
 <ownerDesignName>InternetLibrary</ownerDesignName>
 <engineerTo>
+<item key="9E52C774-6ECA-0B52-CA35-050BDE7AA6F1" value="true"/>
 <item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
@@ -58,12 +62,13 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="use content" id="D2270A80-37D5-45DA-D030-C8E84722C4A6">
+<Attribute name="use content" id="F3724FBB-08F6-25DB-23EC-5D1CE518A7DD">
 <createdBy>jungdo</createdBy>
-<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<createdTime>2021-10-05 09:47:42 UTC</createdTime>
 <generatorID>3FE5E128-1EB4-4925-34FE-145AE5C6FA82</generatorID>
 <ownerDesignName>InternetLibrary</ownerDesignName>
 <engineerTo>
+<item key="9E52C774-6ECA-0B52-CA35-050BDE7AA6F1" value="true"/>
 <item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
@@ -75,17 +80,18 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="5BB8B4E2-91CC-C478-F83C-53DF94E76BED" name="use point log PK">
+<identifier id="2E8E52E8-C599-8B8C-42A7-0EC1C226BDA3" name="use point log PK">
 <createdBy>jungdo</createdBy>
-<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<createdTime>2021-10-05 09:47:42 UTC</createdTime>
 <generatorID>BD228192-9CF1-5BB9-4A24-04CBCDFC1701</generatorID>
 <ownerDesignName>InternetLibrary</ownerDesignName>
 <engineerTo>
-<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+<item key="9E52C774-6ECA-0B52-CA35-050BDE7AA6F1" value="true"/>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>1741F9C7-8FD7-310F-EEC3-B1ED1E6F4801</attributeRef>
+<attributeRef>D6931378-BCA0-118B-34A9-E02C783210B2</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

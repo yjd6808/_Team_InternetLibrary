@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="review_board_book_FK" directorySegmentName="seg_0" id="F8F885FA-BAF9-C731-5530-2021C03BD42B">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:47:42 UTC</createdTime>
+<generatorID>21598008-C6A9-04D9-9BF2-609CE9168535</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<sourcePk>222362EC-1BE3-57F3-06AC-BF23341B742D</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3AD81C06-AB01-6517-A1DD-4FEF5E9B4AB8</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>31675F71-ED45-46DD-D31B-FE792A30F0A3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

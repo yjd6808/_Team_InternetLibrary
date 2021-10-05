@@ -27,7 +27,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>20</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -110,6 +110,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="5EDB8255-EE5A-E769-BF64-C665AF431406"/>
+<colUsage columnID="FCAF3480-1371-3CD2-E021-3CCFFE8BE9AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="299C8510-F10B-37DB-BF79-B74AC4FD320C" name="review_board__IDX">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:48:36 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F8F885FA-BAF9-C731-5530-2021C03BD42B</relationGeneratorID>
+<indexColumnUsage>
 <colUsage columnID="FCAF3480-1371-3CD2-E021-3CCFFE8BE9AF"/>
 </indexColumnUsage>
 </ind_PK_UK>
