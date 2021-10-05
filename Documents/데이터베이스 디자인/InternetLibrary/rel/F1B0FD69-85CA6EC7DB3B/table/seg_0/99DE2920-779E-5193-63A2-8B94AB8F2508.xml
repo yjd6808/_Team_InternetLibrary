@@ -19,7 +19,7 @@
 <ownDataTypeParameters>,18,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="user_id" id="33FF9140-B737-7AB6-9A80-A025F1B44E77">
+<Column name="id" id="33FF9140-B737-7AB6-9A80-A025F1B44E77">
 <createdBy>jungdo</createdBy>
 <createdTime>2021-10-03 06:19:01 UTC</createdTime>
 <ownerDesignName>InternetLibrary</ownerDesignName>
@@ -30,7 +30,7 @@
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="user_pass" id="C9F56237-997A-711A-5F4A-67751FE793FE">
+<Column name="pass" id="C9F56237-997A-711A-5F4A-67751FE793FE">
 <createdBy>jungdo</createdBy>
 <createdTime>2021-10-03 06:19:56 UTC</createdTime>
 <ownerDesignName>InternetLibrary</ownerDesignName>
@@ -39,6 +39,48 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nick" id="2C34AF47-2A54-AC01-2C37-48636CEC7EED">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-04 08:16:47 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="EC115079-80E9-D3C6-C5BF-E60B2A2CDA4A">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-04 08:17:23 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="birth" id="AE1F4C09-5589-6B19-5F24-485953AFE5AE">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-04 08:18:46 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="registration" id="1EC62864-FE45-A254-9E51-71DDB0A246B3">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-04 08:20:50 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

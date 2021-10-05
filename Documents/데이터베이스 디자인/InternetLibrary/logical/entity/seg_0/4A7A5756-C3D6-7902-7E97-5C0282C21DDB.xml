@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4A7A5756-C3D6-7902-7E97-5C0282C21DDB" name="user">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<generatorID>99DE2920-779E-5193-63A2-8B94AB8F2508</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="uid" id="DEF75A65-0226-4935-E89F-1B88BF6B12A9">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<generatorID>46C89167-933D-7975-B70B-55606DC92D91</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>18</dataTypePrecision>
+<ownDataTypeParameters>,18,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user id" id="5EA4B225-9BF7-FEFC-6944-B7D76557EF57">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<generatorID>33FF9140-B737-7AB6-9A80-A025F1B44E77</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user pass" id="5C96E990-7D64-080F-EBCF-1E2CAA86A5A0">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<generatorID>C9F56237-997A-711A-5F4A-67751FE793FE</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user nick" id="A8467242-2539-1EF5-C513-A53FB50837F4">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<generatorID>2C34AF47-2A54-AC01-2C37-48636CEC7EED</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user email" id="FF362922-2622-BFD0-E9A2-B9A67B47981A">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<generatorID>EC115079-80E9-D3C6-C5BF-E60B2A2CDA4A</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="uesr birth" id="858B62DB-E9DD-64B9-F343-564355ECFCD1">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<generatorID>AE1F4C09-5589-6B19-5F24-485953AFE5AE</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user registration" id="D78EA5DB-3822-AF13-1B56-20A68487E891">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<generatorID>1EC62864-FE45-A254-9E51-71DDB0A246B3</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AB070AC7-5A65-9147-F42A-392A74E054A3" name="user PK">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<generatorID>63C3B4DE-661C-6194-15FC-1693D2FE2CA0</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DEF75A65-0226-4935-E89F-1B88BF6B12A9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F7ADAA2F-3C85-602B-1AC1-4FEA7E7A1B79" name="charge_point_log">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-04 08:32:38 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_uid" id="A861C3E2-2064-B94B-C376-F04595940153">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 06:02:29 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>18</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="475EC1DB-069C-C674-244C-82718C036C0E" referredColumn="46C89167-933D-7975-B70B-55606DC92D91"/>
+</associations>
+</Column>
+<Column name="price" id="8ADFF76E-68AC-8338-D5E3-967B71C0CCEC">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-04 08:32:38 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="charge_point" id="2ECB9D8D-7BE0-3059-3C9A-17E6B0AD56F1">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 00:50:05 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="charge_date" id="731242A9-A7AB-AA9D-EB75-90FEFEA216C4">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-04 08:32:38 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D255F41D-DFC2-814E-6907-882660D0DDCE" name="charge_point_log_PK">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-04 08:32:38 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A861C3E2-2064-B94B-C376-F04595940153"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04179B9B-6F64-BADB-AB8C-7DFDB12970B4" name="charge_point_log_user_FK">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 06:02:29 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A861C3E2-2064-B94B-C376-F04595940153"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="charge_point_log_user_FK" directorySegmentName="seg_0" id="B3507415-83BB-D6FB-0FB1-6CA0F0AF789B">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<generatorID>A32847AD-18F4-8A47-1B08-20B8831C42B0</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<sourcePk>AB070AC7-5A65-9147-F42A-392A74E054A3</sourcePk>
+<dominantRole>4A7A5756-C3D6-7902-7E97-5C0282C21DDB</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4A7A5756-C3D6-7902-7E97-5C0282C21DDB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2065359F-5209-DCE1-6C5F-0707E63AC172</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

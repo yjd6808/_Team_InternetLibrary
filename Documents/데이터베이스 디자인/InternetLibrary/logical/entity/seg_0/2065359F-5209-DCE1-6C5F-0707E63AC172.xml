@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2065359F-5209-DCE1-6C5F-0707E63AC172" name="charge point log">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<generatorID>F7ADAA2F-3C85-602B-1AC1-4FEA7E7A1B79</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="user uid" id="E17AFF9C-E593-22EC-D14B-A28872A03754">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<generatorID>B3507415-83BB-D6FB-0FB1-6CA0F0AF789B</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<referedAttribute>DEF75A65-0226-4935-E89F-1B88BF6B12A9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>18</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="price" id="E4B83641-3E9E-47B3-F904-37676DA1B2DE">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<generatorID>8ADFF76E-68AC-8338-D5E3-967B71C0CCEC</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="charge point" id="9343BC62-A410-078B-32E3-DCE5B004EA2E">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<generatorID>2ECB9D8D-7BE0-3059-3C9A-17E6B0AD56F1</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="charge date" id="68F5B270-3315-06B9-DA5B-12454849D68D">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<generatorID>731242A9-A7AB-AA9D-EB75-90FEFEA216C4</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B5B8F13D-34B5-7EED-2135-30BA2FB8C3E8" name="charge point log PK">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:01:03 UTC</createdTime>
+<generatorID>D255F41D-DFC2-814E-6907-882660D0DDCE</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E17AFF9C-E593-22EC-D14B-A28872A03754</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
