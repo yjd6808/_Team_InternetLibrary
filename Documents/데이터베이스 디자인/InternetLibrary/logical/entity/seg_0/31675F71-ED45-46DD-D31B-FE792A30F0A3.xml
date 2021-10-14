@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="31675F71-ED45-46DD-D31B-FE792A30F0A3" name="review board">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:47:42 UTC</createdTime>
+<generatorID>CC4184BD-6B5A-FA78-2305-B4276A2CF667</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="uid" id="7BC31623-5AFD-B1CC-C9FD-8457E5323999">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:47:42 UTC</createdTime>
+<generatorID>5EDB8255-EE5A-E769-BF64-C665AF431406</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="book uid" id="B8CB7066-4343-EA13-06CF-C11001866FE6">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:47:42 UTC</createdTime>
+<generatorID>F8F885FA-BAF9-C731-5530-2021C03BD42B</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<referedAttribute>4E4F8712-859F-5A52-73A4-C9095857C1F3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="title" id="5BA2E515-9F5C-DCA1-A529-F210D105A487">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:47:42 UTC</createdTime>
+<generatorID>10C4C97B-DCCC-7670-C652-519CA84E83EB</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="content" id="D8A800C1-4AD6-6E02-24B6-BAB8B8BFB5FF">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:47:42 UTC</createdTime>
+<generatorID>DA7DDD82-D071-C096-4E5D-86FAABFC5FC9</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3000</dataTypeSize>
+<ownDataTypeParameters>3000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="created" id="4AE40243-2254-9FEF-910B-E5990981D876">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:47:42 UTC</createdTime>
+<generatorID>5850E87E-D474-2533-1DCC-27EAC365ECC9</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="visit count" id="42CCC0D2-81E3-7698-E33D-0EC6D356E31E">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:47:42 UTC</createdTime>
+<generatorID>DD1C0269-56D2-BFD9-3257-2C5EF6819F60</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="like count" id="8916F2D5-98CE-222F-8E73-F7676E8B05CA">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:47:42 UTC</createdTime>
+<generatorID>B5A98D80-9F18-032B-C9F9-F2C02029CF89</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="score" id="8EEAF971-AF22-492C-7013-DC04FF53757E">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:47:42 UTC</createdTime>
+<generatorID>3F35B7D9-3C17-B30F-944C-1119F0284BF0</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,4,4</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="57A1EA96-9093-636C-CC1E-771F349C0EBD" name="review board PK">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:47:42 UTC</createdTime>
+<generatorID>7EAA0504-9760-F2E8-64FC-C1DD89707980</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7BC31623-5AFD-B1CC-C9FD-8457E5323999</attributeRef>
+<attributeRef>B8CB7066-4343-EA13-06CF-C11001866FE6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

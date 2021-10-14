@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="48F1AAC8-DC81-4032-079A-BBCD6A85E472" name="use_point_log">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>31CC623F-1911-F94E-EEA9-A930BC2475DF</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_uid" id="0F3053E0-8F02-5ADE-D0FC-14EEE88862E9">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>D6931378-BCA0-118B-34A9-E02C783210B2</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>18</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A29D9E69-5BCF-A1A2-EEDF-367C1DF4569F" referredColumn="D6ED7EA7-717F-2FB4-D6C5-A9AB8EB07AA2"/>
+</associations>
+</Column>
+<Column name="use_point" id="DC3236A7-2CD6-F7E5-BC52-C145752011DF">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>A9718ACD-F4B8-1111-D59D-935F89B98863</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="use_date" id="71FD2246-3C9A-0133-27CF-6B592A3EDB57">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>C254E986-A5A9-097C-27B1-565F61E74CAB</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="use_content" id="44B0A0D3-73A1-2A22-9493-4FEB4963EB09">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>F3724FBB-08F6-25DB-23EC-5D1CE518A7DD</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5DBC22E9-7E32-54A6-0E05-5D369BF3AEC7" name="use_point_log_user_FK">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>A3FC3EAC-0F27-2F70-40D5-C0B6AA016FD2</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F3053E0-8F02-5ADE-D0FC-14EEE88862E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9185A210-A086-07BB-FB30-826F74BFF072" name="request_board">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:41:55 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="uid" id="C9039DA0-D98E-CDD4-9902-73498E363198">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:49:49 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="title" id="105BDB17-3995-F93E-1CBE-12D55D832DC2">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:48:47 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="content" id="03799966-ED44-867A-56FB-5126E7050524">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:49:03 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3000</dataTypeSize>
+<ownDataTypeParameters>3000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created" id="1AE17DB5-FB83-B1EE-4D2B-044DA5CE1DDF">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:49:18 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="visit_count" id="F7A12A41-3A5A-68FB-EDDF-E4AE889692E4">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:49:38 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BA91AB86-B7F6-6883-F071-44B9C0506322" name="request_board_PK">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 01:51:11 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9039DA0-D98E-CDD4-9902-73498E363198"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

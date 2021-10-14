@@ -2,15 +2,14 @@
 
 
 package bean {
-    abstract class PageData {
-        페이징 처리되는 하는 오브젝트를 묶기 위한 클래스
-        --
-        - int id - Primary Key 값
+    interface PageData {
+        페이징 처리되는 오브젝트를 묶기 위한 클래스
     }
 
     abstract class BoardBean {
         게시글 유형의 클래스
         --
+        - int user_uid - 게시글을 쓴 유저 고유 ID
         - String title - 게시글 제목
         - String content - 게시글 내용
         - Date createdDate - 게시글이 생성된 날짜
@@ -34,10 +33,11 @@ package bean {
     class CommentBean {
         댓글
         --
-        - int boardType - 후기 게시글인지, 신청 게시글인지
         - int boardId - 댓글이 달린 게시글 ID값
-        - String content - 게시글 내용
         - int userId - 게시글을 단 유저의 ID값
+        - int boardType - 후기 게시글인지, 신청 게시글인지
+        - String content - 게시글 내용
+        - Date createDate - 댓글 단 시간
     }
 
     class BookBean  {
@@ -48,8 +48,8 @@ package bean {
         - int ageLimit - 나이 제한
         - int borrowPoint - 대여시 소모 포인트
         - int buyPoint - 구매시 소모 포인트
-        - int imageId - 이미지 ID 값
-        - int fileId - 파일 ID 값
+        - String imageFileName - 이미지 명
+        - String bookfileName - 책 파일 명
         - float score - 도서 평점
     }
 

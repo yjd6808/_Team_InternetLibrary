@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="use_point_log_user_FK" directorySegmentName="seg_0" id="A3FC3EAC-0F27-2F70-40D5-C0B6AA016FD2">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:47:42 UTC</createdTime>
+<generatorID>777C0595-EC0E-B26D-E6B7-F2E9E0FA007A</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="9E52C774-6ECA-0B52-CA35-050BDE7AA6F1" value="true"/>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<sourcePk>3B8E1CEC-2975-E019-0D1E-E7CA4732AB32</sourcePk>
+<dominantRole>F00220D2-E842-8085-96B5-4457F2DC6272</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F00220D2-E842-8085-96B5-4457F2DC6272</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>31CC623F-1911-F94E-EEA9-A930BC2475DF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

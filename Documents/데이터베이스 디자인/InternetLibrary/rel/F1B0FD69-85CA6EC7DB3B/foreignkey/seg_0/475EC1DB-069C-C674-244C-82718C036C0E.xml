@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="475EC1DB-069C-C674-244C-82718C036C0E" containerWithKeyObject="F7ADAA2F-3C85-602B-1AC1-4FEA7E7A1B79" localFKIndex="04179B9B-6F64-BADB-AB8C-7DFDB12970B4" name="charge_point_log_user_FK">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 06:02:29 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<referredTableLongName>user</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>99DE2920-779E-5193-63A2-8B94AB8F2508</referredTableID>
+<keyObject>63C3B4DE-661C-6194-15FC-1693D2FE2CA0</keyObject>
+<referredKeyID>63C3B4DE-661C-6194-15FC-1693D2FE2CA0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>uid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorColumn>46C89167-933D-7975-B70B-55606DC92D91</discriminatorColumn>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

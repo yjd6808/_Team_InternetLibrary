@@ -1,16 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="99DE2920-779E-5193-63A2-8B94AB8F2508" name="user">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CD018F40-A1AD-8632-F1AE-242407F72338" name="user">
 <createdBy>jungdo</createdBy>
-<createdTime>2021-10-03 04:10:44 UTC</createdTime>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>F00220D2-E842-8085-96B5-4457F2DC6272</generatorID>
 <ownerDesignName>InternetLibrary</ownerDesignName>
-<ordsAlias>table_1</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="uid" id="46C89167-933D-7975-B70B-55606DC92D91">
+<Column name="uid" id="D6ED7EA7-717F-2FB4-D6C5-A9AB8EB07AA2">
 <createdBy>jungdo</createdBy>
-<createdTime>2021-10-03 04:11:07 UTC</createdTime>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>4FBC99A0-D34C-BFC1-8778-2A6FB929916D</generatorID>
 <ownerDesignName>InternetLibrary</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -19,9 +20,10 @@
 <ownDataTypeParameters>,18,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id" id="33FF9140-B737-7AB6-9A80-A025F1B44E77">
+<Column name="id" id="38FA3668-69C6-F363-9AB1-0C36EE66D30C">
 <createdBy>jungdo</createdBy>
-<createdTime>2021-10-03 06:19:01 UTC</createdTime>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>A68821C1-5B14-7260-1E2D-012794EB9D7C</generatorID>
 <ownerDesignName>InternetLibrary</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -30,9 +32,10 @@
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="pass" id="C9F56237-997A-711A-5F4A-67751FE793FE">
+<Column name="pass" id="79A8B403-4E4A-BC34-4D08-C1F8835810C6">
 <createdBy>jungdo</createdBy>
-<createdTime>2021-10-03 06:19:56 UTC</createdTime>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>60D5B1FF-4FAE-EE59-A762-E664716CD986</generatorID>
 <ownerDesignName>InternetLibrary</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -41,9 +44,10 @@
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nick" id="2C34AF47-2A54-AC01-2C37-48636CEC7EED">
+<Column name="nick" id="7D17FBFE-ECBC-943C-2D00-C3AE5D6DDAB4">
 <createdBy>jungdo</createdBy>
-<createdTime>2021-10-04 08:16:47 UTC</createdTime>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>94FEB888-EA06-3A8F-332B-B5F25412F105</generatorID>
 <ownerDesignName>InternetLibrary</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -52,9 +56,10 @@
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="email" id="EC115079-80E9-D3C6-C5BF-E60B2A2CDA4A">
+<Column name="email" id="55FD5D47-22F4-DD2D-886B-FD2F1BD2E697">
 <createdBy>jungdo</createdBy>
-<createdTime>2021-10-04 08:17:23 UTC</createdTime>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>9D7F5F93-5BE0-3E76-8B70-EE333D05C40B</generatorID>
 <ownerDesignName>InternetLibrary</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -63,9 +68,10 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="birth" id="AE1F4C09-5589-6B19-5F24-485953AFE5AE">
+<Column name="birth_date" id="68E5253B-3199-CA87-E30A-F60AE3676D58">
 <createdBy>jungdo</createdBy>
-<createdTime>2021-10-04 08:18:46 UTC</createdTime>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>FB0086FC-E196-EF66-0C79-CACC4F317EB2</generatorID>
 <ownerDesignName>InternetLibrary</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -73,9 +79,10 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="registration" id="1EC62864-FE45-A254-9E51-71DDB0A246B3">
+<Column name="registration_date" id="58910B73-4604-DF94-7D7A-A0950976A16A">
 <createdBy>jungdo</createdBy>
-<createdTime>2021-10-04 08:20:50 UTC</createdTime>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>18972567-80FB-FD8F-658C-199A71348F9C</generatorID>
 <ownerDesignName>InternetLibrary</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -85,15 +92,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="63C3B4DE-661C-6194-15FC-1693D2FE2CA0" name="user_PK">
+<ind_PK_UK id="81FEC03B-765E-69B3-028F-6D930187E1B1" name="user_PK">
 <createdBy>jungdo</createdBy>
-<createdTime>2021-10-03 06:18:19 UTC</createdTime>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>3B8E1CEC-2975-E019-0D1E-E7CA4732AB32</generatorID>
 <ownerDesignName>InternetLibrary</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="46C89167-933D-7975-B70B-55606DC92D91"/>
+<colUsage columnID="D6ED7EA7-717F-2FB4-D6C5-A9AB8EB07AA2"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

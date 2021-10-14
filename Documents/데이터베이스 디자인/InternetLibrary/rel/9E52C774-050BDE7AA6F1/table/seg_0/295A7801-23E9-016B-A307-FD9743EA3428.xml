@@ -1,0 +1,175 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="295A7801-23E9-016B-A307-FD9743EA3428" name="review_board">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>31675F71-ED45-46DD-D31B-FE792A30F0A3</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="uid" id="CD7E3A0E-C504-5830-7420-6B68FBE273FB">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>7BC31623-5AFD-B1CC-C9FD-8457E5323999</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_uid" id="9E5B3505-C84A-62EF-24C2-926342CE34C0">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 10:09:32 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>18</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="07F7DE04-F489-9DEF-B408-D4CAD000207F" referredColumn="D6ED7EA7-717F-2FB4-D6C5-A9AB8EB07AA2"/>
+</associations>
+</Column>
+<Column name="book_uid" id="EC51C805-983D-304F-E4F1-38BE7E745F0A">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>B8CB7066-4343-EA13-06CF-C11001866FE6</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E3C0E5D-EEDC-5884-8BE2-B1A97C9F3107" referredColumn="6D93F2DD-917A-28B7-6672-3361070FEA42"/>
+</associations>
+</Column>
+<Column name="title" id="ED690D5C-071F-2461-0D5C-2208FEE7ADD3">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>5BA2E515-9F5C-DCA1-A529-F210D105A487</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="content" id="FA101635-1FC5-A13D-3BBC-FBB1C80D4318">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>D8A800C1-4AD6-6E02-24B6-BAB8B8BFB5FF</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3000</dataTypeSize>
+<ownDataTypeParameters>3000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_date" id="1B4EEEF3-542B-235D-AD39-4AA4679D0640">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>4AE40243-2254-9FEF-910B-E5990981D876</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="visit_count" id="9348A448-9A04-652E-8B29-AB669E72DA42">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>42CCC0D2-81E3-7698-E33D-0EC6D356E31E</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="like_count" id="1A4AEAF9-FB05-ACDA-B075-52D00B6278FF">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>8916F2D5-98CE-222F-8E73-F7676E8B05CA</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="score" id="C9960E65-C40C-6D12-8991-D2D95B1E18B8">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>8EEAF971-AF22-492C-7013-DC04FF53757E</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,4,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BBF54EC4-6B5D-8FCE-90BD-E0126974CE90" name="review_board_PK">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>57A1EA96-9093-636C-CC1E-771F349C0EBD</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD7E3A0E-C504-5830-7420-6B68FBE273FB"/>
+<colUsage columnID="9E5B3505-C84A-62EF-24C2-926342CE34C0"/>
+<colUsage columnID="EC51C805-983D-304F-E4F1-38BE7E745F0A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="958B1462-86F5-273E-ECF4-8F23FE7DB9DD" name="review_board__IDX">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F8F885FA-BAF9-C731-5530-2021C03BD42B</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="EC51C805-983D-304F-E4F1-38BE7E745F0A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6D3F8D02-3D29-130A-003B-3391A8E43569" name="review_board_book_FK">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:51:26 UTC</createdTime>
+<generatorID>F8F885FA-BAF9-C731-5530-2021C03BD42B</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC51C805-983D-304F-E4F1-38BE7E745F0A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="176AAF5B-8A7A-95E7-4A87-70EAD6B9AB9E" name="review_board_user_FK">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 10:09:32 UTC</createdTime>
+<generatorID>3B8E1CEC-2975-E019-0D1E-E7CA4732AB32</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E5B3505-C84A-62EF-24C2-926342CE34C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="comment_user_FK" directorySegmentName="seg_0" id="C73522B3-82BC-C201-2BAE-EDADDDB09555">
+<createdBy>jungdo</createdBy>
+<createdTime>2021-10-05 09:47:42 UTC</createdTime>
+<generatorID>46A5B168-C3B4-DAED-B1A8-DC21E216D77E</generatorID>
+<ownerDesignName>InternetLibrary</ownerDesignName>
+<engineerTo>
+<item key="F1B0FD69-568A-547F-AF19-85CA6EC7DB3B" value="true"/>
+</engineerTo>
+<sourcePk>3B8E1CEC-2975-E019-0D1E-E7CA4732AB32</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F00220D2-E842-8085-96B5-4457F2DC6272</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>45E988CE-F271-DD6E-7FBE-8EFD6EA57BEC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
