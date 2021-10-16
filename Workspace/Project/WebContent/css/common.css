@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+:root {
+    --default-font-family: 'Noto Sans KR', sans-serif;
+    --default-btn-bg-color: #555;
+    --default-btn-text-color: #fff;
+    --btn-header-btn-transition-background-color: white;
+    --btn-header-btn-transition-color: black;
+    --modal-register-span-bg-color: #555;
+	--modal-register-text-color: #fff;
+}
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+}

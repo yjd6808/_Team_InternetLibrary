@@ -1,13 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
-
-* {
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
-:root {
-    --element-color: #555;
-    --text-color: #fff;
-  }
+@import 'common.css';
 
 body {
     background-image: url(../images/login-bg.jpg);
@@ -16,12 +7,12 @@ body {
 }
 
 .input-group-text {
-    background-color: var(--element-color);
-    color: var( --text-color);
+    background-color: var(--default-btn-bg-color);
+    color: var(--default-btn-text-color);
 }
 
 .surrounded {
-    border: var(--element-color) 5px solid;
+    border: var(--default-btn-bg-color) 5px solid;
 }
 
 hr {
@@ -42,14 +33,14 @@ hr {
 }
 
 .login-btn {
-    background-color: var(--element-color);
+    background-color: var(--default-btn-bg-color);
     color: white;
     width: 80px;
 }
 
 .register-btn {
     width: 80px;
-    background-color: var(--element-color);
+    background-color: var(--default-btn-bg-color);
     color: white;
 }
 
@@ -59,7 +50,7 @@ hr {
 }
 
 #register-ok-btn {
-    background-color: var(--element-color);
+    background-color: var(--default-btn-bg-color);
     color: white;
 }
 
