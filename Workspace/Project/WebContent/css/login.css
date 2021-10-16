@@ -15,10 +15,6 @@ body {
     border: var(--default-btn-bg-color) 5px solid;
 }
 
-hr {
-    background-image: linear-gradient(to right, #fff, #000, #fff);
-}
-
 .login-container {
     display: flex;
     align-items: center;

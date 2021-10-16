@@ -1,18 +1,20 @@
-.rating-span {
+
+
+.left-content .rating-span {
     font-size: 16px;
 }
 
-.rating-score {
+.left-content .rating-score {
     font-size: 11px;
     align-self: flex-end;
 }
 
-.rating-container {
+.left-content .rating-container {
     position: relative;
     display: inline-block;
 }
 
-.rating-star-empty {
+.left-content .rating-star-empty {
     position: absolute;
     background-image: url(../images/black-star-empty.png);
     background-size: 20px;
@@ -21,7 +23,7 @@
     padding: 0;
 }
 
-.rating-star-fill {
+.left-content .rating-star-fill {
     position: absolute;
     background-image: url(../images/black-star-fill.png);
     background-size: 20px;

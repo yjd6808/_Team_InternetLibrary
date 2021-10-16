@@ -1,28 +1,8 @@
 @import 'common.css';
 
-body {
-    background-image: url(../images/login-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.main-content {
-    display: flex;
-    gap: 1rem;
-}
 
-.left-content {
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    gap: 0.7rem;
-}
 
-.right-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
 
 .notice-container {
     position: relative;
@@ -60,17 +40,7 @@ body {
 
 
 
-.review-container tbody tr:hover {
-    background-color: black;
-    color: white;
-    transition: all 0.3s;
-}
 
-.request-container tbody tr:hover {
-    background-color: black;
-    color: white;
-    transition: all 0.3s;
-}
 
 .notice-control-panel {
     position: absolute;

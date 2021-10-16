@@ -1,0 +1,10 @@
+@import 'common.css';
+
+.border-container .search-group {
+    display: flex;
+}
+
+.border-container .search-group select {
+    display: inline-block;
+    width: 300px;
+}

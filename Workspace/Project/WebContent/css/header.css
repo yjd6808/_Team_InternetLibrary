@@ -59,11 +59,6 @@
     margin: auto;
 }
 
-.modal hr {
-        margin: 13px;
-        background-image: linear-gradient(to right, #fff, #000, #fff);
-}
-
 .modal .modal-content {
     border: 5px solid #000;
 }

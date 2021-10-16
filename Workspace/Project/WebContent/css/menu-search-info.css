@@ -1,0 +1,66 @@
+@import 'common.css';
+
+.border-container .search-group {
+    display: flex;
+}
+
+.border-container .search-group select {
+    display: inline-block;
+    width: 300px;
+}
+
+.border-container .image-container {
+    width: 40%;
+    height: 485px;
+    border: 1px solid #000;
+}
+
+.border-container .row {
+    gap: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgray;
+}
+
+.border-container .row .col {
+    padding: 5px;
+}
+
+.border-container .row .col-3 {
+    font-weight: bold;
+    padding: 5px;
+}
+
+
+.border-container .rating-span {
+    font-size: 0.7em;
+}
+
+.border-container .rating-score {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.border-container .rating-container {
+    position: relative;
+    display: inline-block;
+}
+
+.border-container .rating-star-empty {
+    position: absolute;
+    background-image: url(../images/black-star-empty.png);
+    background-size: 30px;
+    height: 30px;
+    background-repeat: repeat;
+    padding: 0;
+}
+
+.border-container .rating-star-fill {
+    position: absolute;
+    background-image: url(../images/black-star-fill.png);
+    background-size: 30px;
+    height: 30px;
+    background-repeat: repeat;
+    padding: 0;
+}
+
+

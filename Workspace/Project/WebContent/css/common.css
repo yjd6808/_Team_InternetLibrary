@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 :root {
     --default-font-family: 'Noto Sans KR', sans-serif;
+    --default-numeric-font-family: 'Open Sans', sans-serif;
     --default-btn-bg-color: #555;
     --default-btn-text-color: #fff;
     --btn-header-btn-transition-background-color: white;
@@ -14,4 +16,150 @@
     font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+hr {
+    margin: 13px;
+    background-image: linear-gradient(to right, #fff, #000, #fff);
+}
+
+body {
+    background-image: url(../images/login-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-content {
+    display: flex;
+    gap: 1rem;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 0.7rem;
+}
+
+.right-content {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* 공통 페이지네이션 패널 */
+.pagination-panel {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20px;
+    height: 40px;
+    bottom: 10px;
+    right: 0px;
+    background-color: white;
+    color: #000;
+}
+
+.pagination-panel .forward:hover,
+.pagination-panel .back:hover
+ {
+    animation-name: rotateY;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes rotateY {
+    to {
+        transform: rotateX(180deg);
+    }
+}
+
+.pagination-panel .back {
+    border: none;
+    background-image: url(../images/back.png);
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.pagination-panel .pages {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination-panel .pages button {
+    font-size: 16px;
+    font-family: var(--default-numeric-font-family);
+    width: 20px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+}
+
+.pagination-panel .pages button:hover {
+    transform: scale(1.2);
+    transition: all 0.3s linear;
+}
+
+.pagination-panel .forward {
+    border: none;
+    background-image: url(../images/forward.png);
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+/* 버튼 효과 */
+.btn-reverse {
+    border: 1px solid var(--default-btn-bg-color);
+    background-color: var(--default-btn-text-color);
+    color: var(--default-btn-bg-color);
+}
+
+.btn-reverse:hover {
+    background-color: var(--default-btn-bg-color);
+    color: var(--default-btn-text-color);
+    transition: all 0.3s linear;
+}
+
+.box-shadow {
+    box-shadow: 3px 3px 5px 0.5px #000;
+}
+
+.reverse-anim:hover {
+    background-color: var(--default-btn-bg-color);
+    color: var(--default-btn-text-color);
+    transition: all 0.3s linear;
+}
+
+/* 테이블 효과 */
+.table tbody tr:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.3s;
+}
+
+.table tbody tr td:nth-child(2):hover {
+    text-decoration: underline ;
+}
+
+/* 테이블 효과 */
+.border-container {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid #000;
+    padding: 1rem;
 }

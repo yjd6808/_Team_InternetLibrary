@@ -33,7 +33,7 @@
 						</div>
 					</div>
 					<br>
-					<h4>최근 후기 게시글</h4>
+					<h4 class="mt-3 mb-3 fw-bold ms-1">최근 리뷰 게시글</h4>
 					<div class="review-container">
 						<table class="table">
 							<thead class="fw-bold">
@@ -79,7 +79,7 @@
 						</table>
 					</div>
 					<br>
-					<h4>최근 신청 게시글</h4>
+					<h4 class="mt-3 mb-3 fw-bold ms-1">최근 신청 게시글</h4>
 					<div class="request-container">
 						<table class="table">
 							<thead class="fw-bold">
