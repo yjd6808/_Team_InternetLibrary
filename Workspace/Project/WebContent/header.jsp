@@ -6,13 +6,15 @@
 </div>
 
 <div class="d-flex align-items-end justify-content-end mb-2" style="width: 1200px; height: 100px">
-	<strong>윤형도님</strong>&nbsp;안녕하세요! &nbsp;&nbsp; 포인트&nbsp;:&nbsp; <a href="#" style="text-decoration: none">500P</a>
-	<button class="btn ms-2">로그아웃</button>
+	<strong>윤형도님</strong>&nbsp;안녕하세요! &nbsp;&nbsp; 포인트&nbsp;:&nbsp; <a href="#"
+		style="text-decoration: none">500P</a>
+	<button class="btn logout-btn">로그아웃</button>
 </div>
-<!-- <div class="d-flex align-items-end justify-content-center"> -->
+
 <div class="row g-0">
 	<div class="col">
-		<button class="header-menu-btn btn rounded-0 w-100" data-bs-toggle="modal" data-bs-target="#modal-register-book">도서 등록</button>
+		<button class="header-menu-btn btn rounded-0 w-100" data-bs-toggle="modal"
+			data-bs-target="#modal-register-book">도서 등록</button>
 
 		<div class="modal fade" id="modal-register-book">
 			<div class="modal-dialog modal-register modal-dialog-centered">
@@ -26,35 +28,35 @@
 							<div class="d-flex gap-3">
 								<div class="d-flex flex-column gap-3">
 									<div class="input-group">
-										<span class="input-group-span input-group-text">제목</span>
-										<input class="form-control" type="text" />
+										<span class="input-group-span input-group-text">제목</span> <input class="form-control"
+											type="text" />
 									</div>
 									<div class="input-group">
-										<span class="input-group-span input-group-text">저자</span>
-										<input class="form-control" type="text" />
+										<span class="input-group-span input-group-text">저자</span> <input class="form-control"
+											type="text" />
 									</div>
 									<div class="input-group">
-										<span class="input-group-span input-group-text">출판사</span>
-										<input class="form-control" type="text" />
+										<span class="input-group-span input-group-text">출판사</span> <input class="form-control"
+											type="text" />
 									</div>
 									<div class="input-group">
-										<span class="input-group-span input-group-text">코드</span>
-										<input class="form-control" type="text" />
+										<span class="input-group-span input-group-text">코드</span> <input class="form-control"
+											type="text" />
 									</div>
 									<div class="input-group">
-										<span class="input-group-span input-group-text">이용대상</span>
-										<select class="form-select" aria-label="Default select example">
+										<span class="input-group-span input-group-text">이용대상</span> <select class="form-select"
+											aria-label="Default select example">
 											<option value="1" selected>전체이용가</option>
 											<option value="2">성인용</option>
 										</select>
 									</div>
 									<div class="input-group">
-										<span class="input-group-span input-group-text">7일 대여(P)</span>
-										<input class="form-control" type="number" />
+										<span class="input-group-span input-group-text">7일 대여(P)</span> <input
+											class="form-control" type="number" />
 									</div>
 									<div class="input-group">
-										<span class="input-group-span input-group-text">구매(P)</span>
-										<input class="form-control" type="number" />
+										<span class="input-group-span input-group-text">구매(P)</span> <input class="form-control"
+											type="number" />
 									</div>
 								</div>
 								<div>

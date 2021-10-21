@@ -1,4 +1,11 @@
 
+.left-content .card {
+    border: 2px solid #000;
+}
+
+.left-content .card:hover {
+    box-shadow: 2px 2px 10px;
+}
 
 .left-content .rating-span {
     font-size: 16px;

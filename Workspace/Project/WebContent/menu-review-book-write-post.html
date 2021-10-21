@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
 		<link rel="stylesheet" href="css/header.css" type="text/css" />
 		<link rel="stylesheet" href="css/left-content-ranking.css" type="text/css" />
-		<link rel="stylesheet" href="css/menu-search-info.css" type="text/css" />
+		<link rel="stylesheet" href="css/menu-review-book-write-post.css">
 	</head>
 	<body>
 		<div class="bg-white mx-auto p-3" style="width: 1250px">
@@ -163,100 +163,240 @@
 					</div>
 
 					<div class="right-content" style="width: 100%">
-						<h4 class="mt-3 mb-3 fw-bold ms-1">도서 정보</h4>
-						<div class="border-container d-flex gap-2">
-							<div class="d-flex flex-column gap-2" style="width: 60%; padding-right: 30px;">
-								<div class="row g-0">
-									<div class="col-3">제목</div>
-									<div class="col">천재 흑마법사</div>
+						<h4 class="mt-3 mb-3 fw-bold ms-1">도서 후기</h4>
+						<div class="border-container px-4">
+							<form action="">
+								<div class="p-2">
+									<label class="fs-5 fw-bold mb-2" for="textbox-title">제목</label>
+									<input id="textbox-title" type="text" class="form-control" placeholder="제목을 입력해주세요." required />
 								</div>
-								<div class="row g-0">
-									<div class="col-3">저자</div>
-									<div class="col">노란커피</div>
+								<div class="p-2">
+									<label class="fs-5 fw-bold mb-2">도서</label>
+									<div class="d-flex gap-3">
+										<!-- 
+											@참고 : https://stackoverflow.com/questions/932653/how-to-prevent-buttons-from-submitting-forms
+											폼 내부의 버튼은 type button 지정을 해야 submit을 안함 
+										-->
+										<button type="button" id="btn-select-book" class="btn btn-reverse" data-bs-toggle="modal" data-bs-target="#modal-select-book">도서를 선택해주세요.</button>
+										<button type="button" id="btn-select-score" class="btn btn-reverse" data-bs-toggle="modal" data-bs-target="#modal-select-score">점수를 선택해주세요.</button>
+									</div>
 								</div>
-								<div class="row g-0">
-									<div class="col-3">출판사</div>
-									<div class="col">문피아</div>
+								<div class="p-2">
+									<label class="fs-5 fw-bold mb-2" for="textbox-content">내용</label>
+									<textarea class="form-control" rows="20" placeholder="내용을 입력해주세요." required></textarea>
 								</div>
-								<div class="row g-0">
-									<div class="col-3">연령제한</div>
-									<div class="col">전체이용가</div>
+								<div class="d-flex justify-content-end p-2 gap-3">
+									<input type="reset" class="btn btn-reverse" value="다시쓰기" />
+									<input type="submit" class="btn btn-reverse fw-bold" value="등록" />
 								</div>
-								<div class="row g-0">
-									<div class="col-3">코드</div>
-									<div class="col">AX000DD</div>
-								</div>
-								<div class="row g-0">
-									<div class="col-3">평점</div>
-									<div class="col d-flex align-items-end">
-										<div class="rating-container" style="width: 150px; height: 30px">
-											<div class="rating-star-empty w-100"></div>
-											<div class="rating-star-fill" style="width: 30%"></div>
+							</form>
+						</div>
+
+						<div class="modal fade" id="modal-select-book">
+							<div class="modal-dialog modal-select-book modal-dialog-centered">
+								<div class="modal-content">
+									<div style="padding: 20px">
+										<div class="text-center mb-2">
+											<h5 class="fw-bold">도서 선택</h5>
 										</div>
-										<span class="rating-score">(3.1)&nbsp;</span>
+										<div class="d-flex mb-2">
+											<select class="d-inline-block w-25">
+												<option value="1" selected>도서명</option>
+												<option value="2">저자</option>
+												<option value="3">출판사</option>
+												<option value="4">코드번호</option>
+											</select>
+											<input class="form-control" type="text" placeholder="입력해주세요." />
+										</div>
+										<table class="table">
+											<thead class="fw-bold">
+												<tr>
+													<td style="width: 10%">번호</td>
+													<td style="width: 50%">제목</td>
+													<td style="width: 20%">저자</td>
+													<td>출판사</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>이 어린녀석에게 축복을</td>
+													<td>김동팔</td>
+													<td>새꿈나무</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>이 어린녀석에게 축복을</td>
+													<td>김동팔</td>
+													<td>새꿈나무</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>이 어린녀석에게 축복을</td>
+													<td>김동팔</td>
+													<td>새꿈나무</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>이 어린녀석에게 축복을</td>
+													<td>김동팔</td>
+													<td>새꿈나무</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>이 어린녀석에게 축복을</td>
+													<td>김동팔</td>
+													<td>새꿈나무</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>이 어린녀석에게 축복을</td>
+													<td>김동팔</td>
+													<td>새꿈나무</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>이 어린녀석에게 축복을</td>
+													<td>김동팔</td>
+													<td>새꿈나무</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>이 어린녀석에게 축복을</td>
+													<td>김동팔</td>
+													<td>새꿈나무</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>이 어린녀석에게 축복을</td>
+													<td>김동팔</td>
+													<td>새꿈나무</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>이 어린녀석에게 축복을</td>
+													<td>김동팔</td>
+													<td>새꿈나무</td>
+												</tr>
+											</tbody>
+										</table>
+
+										<div class="row align-content-center justify-content-center">
+											<div class="col text-start"></div>
+											<div class="col text-center">
+												<div class="pagination-panel">
+													<button class="back"></button>
+													<div class="pages">
+														<button>1</button>
+														<button>2</button>
+														<button class="text-white bg-dark">3</button>
+														<button>4</button>
+														<button>5</button>
+													</div>
+													<button class="forward"></button>
+												</div>
+											</div>
+
+											<div class="col text-end"></div>
+										</div>
 									</div>
 								</div>
-								<div class="w-100 h-100 row align-items-end gap-3 g-0 p-0 border-0">
-									<div class="text-center text-secondary">이미 소장중인 도서입니다.</div>
-									<div class="col">
-										<button class="w-100 h-100 btn-reverse box-shadow">대여(50P)</button>
-									</div>
-									<div class="col">
-										<button class="w-100 h-100 btn-reverse box-shadow">구매(50P)</button>
-									</div>
-								</div>
-							</div>
-							<div class="image-container">
-								<img class="w-100 h-100" src="https://cdn1.munpia.com/files/attach/2021/0803/001/g0hYyK68OcR8NwtT.jpg" />
 							</div>
 						</div>
-						<br>
-						<h4 class="mt-3 mb-3 fw-bold ms-1">도서 후기</h4>
-						<div class="border-container d-flex gap-2">
-							<table class="table">
-								<thead class="fw-bold">
-									<tr>
-										<td style="width: 8%;" >글번호</td>
-										<td style="width: 60%;" >제목</td>
-										<td style="width: 15%;">작성자</td>
-										<td>작성일</td>
-									</tr>
-								</thead>
-								<tbody>
-									<tr onclick="document.location='https://novel.munpia.com/236702'" role="button">
-										<td>1</td>
-										<td>개꿀잼 ㅋfdsfdsfdsfdsfs</td>
-										<td>앙기모리</td>
-										<td>2021-07-13</td>
-									</tr>
-									<tr onclick="document.location='https://novel.munpia.com/236702'" role="button">
-										<td>2</td>
-										<td>개꿀잼 ㅋfdsfdsfdsfdsfs</td>
-										<td>앙기모리</td>
-										<td>2021-07-13</td>
-									</tr>
-									<tr onclick="document.location='https://novel.munpia.com/236702'" role="button">
-										<td>2</td>
-										<td>개꿀잼 ㅋfdsfdsfdsfdsfs</td>
-										<td>앙기모리</td>
-										<td>2021-07-13</td>
-									</tr>
-									<tr onclick="document.location='https://novel.munpia.com/236702'" role="button">
-										<td>2</td>
-										<td>개꿀잼 ㅋfdsfdsfdsfdsfs</td>
-										<td>앙기모리</td>
-										<td>2021-07-13</td>
-									</tr>
-									<tr onclick="document.location='https://novel.munpia.com/236702'" role="button">
-										<td>2</td>
-										<td>개꿀잼 ㅋfdsfdsfdsfdsfs</td>
-										<td>앙기모리</td>
-										<td>2021-07-13</td>
-									</tr>
-								</tbody>
-							</table>
+
+						<div class="modal fade" id="modal-select-score">
+							<div class="modal-dialog modal-select-score modal-dialog-centered modal-dialog-scrollable">
+								<div class="modal-content">
+									<div style="padding: 20px">
+										<div class="text-center mb-2">
+											<h5 class="fw-bold">점수 선택</h5>
+										</div>
+
+										
+										<div class="position-relative w-100" style="height: 50px">
+											<div class="rating-container" style="width: 250px">
+												<div class="rating-star-empty w-100"></div>
+												<div class="rating-star-fill" style="width: 0%"></div>
+											</div>
+											<div class="d-flex h-100 position-relative">
+												<button
+													class="op-0 btn"
+													style="width: 10%"
+													onmouseover="selectScoreBtn_OnMouseOver(1)"
+													onclick="selectScoreBtn_OnClick(1)"
+													data-bs-dismiss="modal"
+												></button>
+												<button
+													class="op-0 btn"
+													style="width: 10%"
+													onmouseover="selectScoreBtn_OnMouseOver(2)"
+													onclick="selectScoreBtn_OnClick(2)"
+													data-bs-dismiss="modal"
+												></button>
+												<button
+													class="op-0 btn"
+													style="width: 10%"
+													onmouseover="selectScoreBtn_OnMouseOver(3)"
+													onclick="selectScoreBtn_OnClick(3)"
+													data-bs-dismiss="modal"
+												></button>
+												<button
+													class="op-0 btn"
+													style="width: 10%"
+													onmouseover="selectScoreBtn_OnMouseOver(4)"
+													onclick="selectScoreBtn_OnClick(4)"
+													data-bs-dismiss="modal"
+												></button>
+												<button
+													class="op-0 btn"
+													style="width: 10%"
+													onmouseover="selectScoreBtn_OnMouseOver(5)"
+													onclick="selectScoreBtn_OnClick(5)"
+													data-bs-dismiss="modal"
+												></button>
+												<button
+													class="op-0 btn"
+													style="width: 10%"
+													onmouseover="selectScoreBtn_OnMouseOver(6)"
+													onclick="selectScoreBtn_OnClick(6)"
+													data-bs-dismiss="modal"
+												></button>
+												<button
+													class="op-0 btn"
+													style="width: 10%"
+													onmouseover="selectScoreBtn_OnMouseOver(7)"
+													onclick="selectScoreBtn_OnClick(7)"
+													data-bs-dismiss="modal"
+												></button>
+												<button
+													class="op-0 btn"
+													style="width: 10%"
+													onmouseover="selectScoreBtn_OnMouseOver(8)"
+													onclick="selectScoreBtn_OnClick(8)"
+													data-bs-dismiss="modal"
+												></button>
+												<button
+													class="op-0 btn"
+													style="width: 10%"
+													onmouseover="selectScoreBtn_OnMouseOver(9)"
+													onclick="selectScoreBtn_OnClick(9)"
+													data-bs-dismiss="modal"
+												></button>
+												<button
+													class="op-0 btn"
+													style="width: 10%"
+													onmouseover="selectScoreBtn_OnMouseOver(10)"
+													onclick="selectScoreBtn_OnClick(10)"
+													data-bs-dismiss="modal"
+												></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
+					<!-- right content end -->
 				</div>
 			</div>
 		</div>
@@ -275,5 +415,7 @@
 
 		<script src="js/jquery/jquery-3.6.0.js"></script>
 		<script src="js/bootstrap/bootstrap.bundle.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="js/menu-review-book-write-post.js"></script>
 	</body>
 </html>

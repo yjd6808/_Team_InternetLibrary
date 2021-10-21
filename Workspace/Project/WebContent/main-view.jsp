@@ -9,9 +9,9 @@
 
 <link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
 
-<link rel="stylesheet" href="css/main.css" type="text/css"/>
+<link rel="stylesheet" href="css/main-view.css" type="text/css"/>
 <link rel="stylesheet" href="css/header.css" type="text/css">
-<link rel="stylesheet" href="css/left-content.css" type="text/css">
+<link rel="stylesheet" href="css/left-content-ranking.css" type="text/css">
 
 </head>
 <body>
@@ -21,13 +21,13 @@
 		</div>
 		<div class="container-xxl mt-2 p-0 w-100">
 			<div class="main-content">
-				<jsp:include page="left-content.jsp"></jsp:include>
+				<jsp:include page="left-content-ranking.jsp"></jsp:include>
 
 				<div class="right-content" style="width: 100%">
 					<div class="notice-container">
 						<img src="images/notice-1.jpg" class="w-100 h-100">
 						<div class="notice-control-panel">
-							<button class="back"></button>
+							<button class="back" onclick="check()"></button>
 							1 / 10
 							<button class="forward"></button>
 						</div>
@@ -39,7 +39,7 @@
 							<thead class="fw-bold">
 								<tr>
 									<td style="width: 8%;">臂锅龋</td>
-									<td style="width: 60%;">力格</tds>
+									<td style="width: 60%;">力格</td>
 									<td style="width: 15%;">累己磊</td>
 									<td>累己老</td>
 								</tr>
@@ -85,7 +85,7 @@
 							<thead class="fw-bold">
 								<tr>
 									<td style="width: 8%;">臂锅龋</td>
-									<td style="width: 60%;">力格</tds>
+									<td style="width: 60%;">力格</td>
 									<td style="width: 15%;">累己磊</td>
 									<td>累己老</td>
 								</tr>
@@ -134,7 +134,7 @@
 
 	<script src="js/bootstrap/bootstrap.js"></script>
 	<script src="js/jquery/jquery-3.6.0.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/main.js" charset="UTF-8"></script>
 
 </body>
 </html>

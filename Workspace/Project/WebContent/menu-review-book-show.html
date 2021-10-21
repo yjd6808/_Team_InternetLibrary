@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
 		<link rel="stylesheet" href="css/header.css" type="text/css" />
 		<link rel="stylesheet" href="css/left-content-ranking.css" type="text/css" />
+		<link rel="stylesheet" href="css/menu-book-show.css" type="text/css" />
 		<link rel="stylesheet" href="css/menu-search-info.css" type="text/css" />
 	</head>
 	<body>
@@ -162,99 +163,178 @@
 						</div>
 					</div>
 
-					<div class="right-content" style="width: 100%">
-						<h4 class="mt-3 mb-3 fw-bold ms-1">도서 정보</h4>
-						<div class="border-container d-flex gap-2">
-							<div class="d-flex flex-column gap-2" style="width: 60%; padding-right: 30px;">
-								<div class="row g-0">
-									<div class="col-3">제목</div>
-									<div class="col">천재 흑마법사</div>
-								</div>
-								<div class="row g-0">
-									<div class="col-3">저자</div>
-									<div class="col">노란커피</div>
-								</div>
-								<div class="row g-0">
-									<div class="col-3">출판사</div>
-									<div class="col">문피아</div>
-								</div>
-								<div class="row g-0">
-									<div class="col-3">연령제한</div>
-									<div class="col">전체이용가</div>
-								</div>
-								<div class="row g-0">
-									<div class="col-3">코드</div>
-									<div class="col">AX000DD</div>
-								</div>
-								<div class="row g-0">
-									<div class="col-3">평점</div>
-									<div class="col d-flex align-items-end">
-										<div class="rating-container" style="width: 150px; height: 30px">
-											<div class="rating-star-empty w-100"></div>
-											<div class="rating-star-fill" style="width: 30%"></div>
-										</div>
-										<span class="rating-score">(3.1)&nbsp;</span>
-									</div>
-								</div>
-								<div class="w-100 h-100 row align-items-end gap-3 g-0 p-0 border-0">
-									<div class="text-center text-secondary">이미 소장중인 도서입니다.</div>
-									<div class="col">
-										<button class="w-100 h-100 btn-reverse box-shadow">대여(50P)</button>
-									</div>
-									<div class="col">
-										<button class="w-100 h-100 btn-reverse box-shadow">구매(50P)</button>
-									</div>
-								</div>
+					<div class="right-content d-flex flex-column gap-2" style="width: 100%">
+						<div class="title">이거 개꿀잼입니다.</div>
+						<div class="title-info">
+							<div class="cell">
+								<div class="img pencil"></div>
+								<div class="value">윤형도</div>
 							</div>
-							<div class="image-container">
-								<img class="w-100 h-100" src="https://cdn1.munpia.com/files/attach/2021/0803/001/g0hYyK68OcR8NwtT.jpg" />
+							<div class="cell">
+								<div class="img comment"></div>
+								<div class="value">37</div>
+							</div>
+							<div class="cell">
+								<div class="img views"></div>
+								<div class="value">127</div>
+							</div>
+							<div class="cell">
+								<div class="img like"></div>
+								<div class="value">12</div>
+							</div>
+							<div class="cell me-auto">
+								<div class="img rating"></div>
+								<div class="value">4.5</div>
+							</div>
+							<div class="last-cell">
+								<div class="img calendar"></div>
+								<div class="value">2017.12.3 17:30</div>
 							</div>
 						</div>
-						<br>
-						<h4 class="mt-3 mb-3 fw-bold ms-1">도서 후기</h4>
-						<div class="border-container d-flex gap-2">
-							<table class="table">
-								<thead class="fw-bold">
-									<tr>
-										<td style="width: 8%;" >글번호</td>
-										<td style="width: 60%;" >제목</td>
-										<td style="width: 15%;">작성자</td>
-										<td>작성일</td>
-									</tr>
-								</thead>
-								<tbody>
-									<tr onclick="document.location='https://novel.munpia.com/236702'" role="button">
-										<td>1</td>
-										<td>개꿀잼 ㅋfdsfdsfdsfdsfs</td>
-										<td>앙기모리</td>
-										<td>2021-07-13</td>
-									</tr>
-									<tr onclick="document.location='https://novel.munpia.com/236702'" role="button">
-										<td>2</td>
-										<td>개꿀잼 ㅋfdsfdsfdsfdsfs</td>
-										<td>앙기모리</td>
-										<td>2021-07-13</td>
-									</tr>
-									<tr onclick="document.location='https://novel.munpia.com/236702'" role="button">
-										<td>2</td>
-										<td>개꿀잼 ㅋfdsfdsfdsfdsfs</td>
-										<td>앙기모리</td>
-										<td>2021-07-13</td>
-									</tr>
-									<tr onclick="document.location='https://novel.munpia.com/236702'" role="button">
-										<td>2</td>
-										<td>개꿀잼 ㅋfdsfdsfdsfdsfs</td>
-										<td>앙기모리</td>
-										<td>2021-07-13</td>
-									</tr>
-									<tr onclick="document.location='https://novel.munpia.com/236702'" role="button">
-										<td>2</td>
-										<td>개꿀잼 ㅋfdsfdsfdsfdsfs</td>
-										<td>앙기모리</td>
-										<td>2021-07-13</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="title-info">
+							<div class="cell">
+								<div class="img book"></div>
+								<div class="value"><a href="#">천재 흑마법사</a></div>
+								<div class="value ref"><a href="#"><노란커피></a></div>
+								<!-- <div class="value ref"><4.7></div> -->
+							</div>
+							
+						</div>
+
+						
+						<div class="content-container">fdsf</div>
+						<div class="like-container">
+							<div class="box btn p-0" role="button" onmouseover="likebox_OnMouseOver()" onmouseleave="likebox_OnMouseLeave()">
+								<div id="like-img" class="img like"></div>
+							</div>
+						</div>
+						
+						<div class="border-bottom border-1 border-secondary my-3"></div>
+
+						<div class="text-decoration-underline fw-bold" style="font-size: 20px; text-underline-position: under">Comments</div>
+						<div class="comment-container">
+							<form>
+								<div class="row">
+									<div class="col-10">
+										<textarea class="w-100 p-2" style="resize: none; font-size: small"></textarea>
+									</div>
+									<div class="col">
+										<button class="btn btn-reverse w-100" style="height: 92%">등록</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="comment-list-container">
+							<!-- <div class="w-100 d-flex align-items-center justify-content-center" style="height: 80px;">등록된 댓글이 없습니다.</div> -->
+
+							<div class="comment-container">
+								<div class="icon"><img src="images/user.png" class="w-100" alt="유저" /></div>
+								<div class="d-flex flex-column w-100">
+									<div class="info">
+										<div class="fw-bold">윤형도</div>
+										<div class="h-100 me-auto">
+											<img src="images/calendar.png" style="width: 22px; opacity: 0.4" />
+											<span style="font-size: 14px">2017.12.1 15:12</span>
+										</div>
+										<div class="d-flex gap-2 text-secondary">
+											<a href="#">수정</a>
+											<a href="#">삭제</a>
+										</div>
+									</div>
+									<div class="content">
+										fdsfdsfdfdfdsfdsf<br />
+										fdsfdsfdfdfdsfdsf<br />
+										fdsfdsfdfdfdsfdsf<br />
+										fdsfdsfdfdfdsfdsf<br />
+									</div>
+								</div>
+							</div>
+							<div class="comment-container">
+								<div class="icon"><img src="images/user.png" class="w-100" alt="유저" /></div>
+								<div class="d-flex flex-column w-100">
+									<div class="info">
+										<div class="fw-bold">윤형도</div>
+										<div class="h-100 me-auto">
+											<img src="images/calendar.png" style="width: 22px; opacity: 0.4" />
+											<span style="font-size: 14px">2017.12.1 15:12</span>
+										</div>
+										<div class="d-flex gap-2 text-secondary">
+											<a href="#">수정</a>
+											<a href="#">삭제</a>
+										</div>
+									</div>
+									<div class="content">fdsfdsfdfd</div>
+								</div>
+							</div>
+							<div class="comment-container">
+								<div class="icon"><img src="images/user.png" class="w-100" alt="유저" /></div>
+								<div class="d-flex flex-column w-100">
+									<div class="info">
+										<div class="fw-bold">윤형도</div>
+										<div class="h-100 me-auto">
+											<img src="images/calendar.png" style="width: 22px; opacity: 0.4" />
+											<span style="font-size: 14px">2017.12.1 15:12</span>
+										</div>
+										<div class="d-flex gap-2 text-secondary">
+											<a href="#">수정</a>
+											<a href="#">삭제</a>
+										</div>
+									</div>
+									<div class="content">fdsfdsfdfd</div>
+								</div>
+							</div>
+							<div class="comment-container">
+								<div class="icon"><img src="images/user.png" class="w-100" alt="유저" /></div>
+								<div class="d-flex flex-column w-100">
+									<div class="info">
+										<div class="fw-bold">윤형도</div>
+										<div class="h-100 me-auto">
+											<img src="images/calendar.png" style="width: 22px; opacity: 0.4" />
+											<span style="font-size: 14px">2017.12.1 15:12</span>
+										</div>
+										<div class="d-flex gap-2 text-secondary">
+											<a href="#">수정</a>
+											<a href="#">삭제</a>
+										</div>
+									</div>
+									<div class="content">fdsfdsfdfd</div>
+								</div>
+							</div>
+							<div class="comment-container">
+								<div class="icon"><img src="images/user.png" class="w-100" alt="유저" /></div>
+								<div class="d-flex flex-column w-100">
+									<div class="info">
+										<div class="fw-bold">윤형도</div>
+										<div class="h-100 me-auto">
+											<img src="images/calendar.png" style="width: 22px; opacity: 0.4" />
+											<span style="font-size: 14px">2017.12.1 15:12</span>
+										</div>
+										<div class="d-flex gap-2 text-secondary">
+											<a href="#">수정</a>
+											<a href="#">삭제</a>
+										</div>
+									</div>
+									<div class="content">fdsfdsfdfd</div>
+								</div>
+							</div>
+						</div>
+						<div class="row align-content-center justify-content-center border-0">
+							<div class="col text-start"></div>
+							<div class="col text-center">
+								<div class="pagination-panel">
+									<button class="back"></button>
+									<div class="pages">
+										<button>1</button>
+										<button>2</button>
+										<button class="text-white bg-dark">3</button>
+										<button>4</button>
+										<button>5</button>
+									</div>
+									<button class="forward"></button>
+								</div>
+							</div>
+
+							<div class="col text-end"></div>
 						</div>
 					</div>
 				</div>
@@ -275,5 +355,6 @@
 
 		<script src="js/jquery/jquery-3.6.0.js"></script>
 		<script src="js/bootstrap/bootstrap.bundle.js"></script>
+		<script src="js/menu-review-book-show.js"></script>
 	</body>
 </html>

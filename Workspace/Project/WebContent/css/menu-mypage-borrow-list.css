@@ -1,0 +1,16 @@
+.my-book-table {
+
+}
+
+.right-content .my-book-table tr td {
+    display: table-cell;
+       vertical-align: middle;
+}
+
+.right-content .my-book-table tr td:nth-child(2) {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+}

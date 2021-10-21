@@ -29,15 +29,11 @@ body {
 }
 
 .login-btn {
-    background-color: var(--default-btn-bg-color);
-    color: white;
     width: 80px;
 }
 
 .register-btn {
     width: 80px;
-    background-color: var(--default-btn-bg-color);
-    color: white;
 }
 
 #ck-save-id-pass {
@@ -45,17 +41,3 @@ body {
     margin-bottom: auto;
 }
 
-#register-ok-btn {
-    background-color: var(--default-btn-bg-color);
-    color: white;
-}
-
-#register-cancel-btn {
-    background-color:slategray;
-    color: white;
-}
-
-
-.logo-text {
-    font-weight: bold;
-}

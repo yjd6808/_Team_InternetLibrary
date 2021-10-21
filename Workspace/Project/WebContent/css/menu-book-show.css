@@ -1,0 +1,176 @@
+.right-content .title {
+    padding: 0.5rem;
+    font-size: calc(1.275rem + 0.3vw);
+    font-weight: bold;
+}
+
+.right-content .title-info {
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #eee;
+}
+
+.right-content .title-info .cell {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.right-content .title-info .last-cell {
+    display: flex;
+}
+
+.right-content .title-info .cell::after {
+    content: " ";
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.right-content .title-info .cell .property {
+    display: inline;
+}
+
+.right-content .title-info .cell .img {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    width: 22px;
+    height: 22px;
+}
+
+.right-content .title-info .cell .comment {
+    background-image: url(../images/comment.png);
+}
+
+.right-content .title-info .cell .pencil {
+    background-image: url(../images/pencil.png);
+}
+
+.right-content .title-info .cell .views {
+    background-image: url(../images/views.png);
+}
+
+.right-content .title-info .cell .like {
+    background-image: url(../images/like.png);
+}
+
+.right-content .title-info .cell .book {
+    background-image: url(../images/book.png);
+}
+
+.right-content .title-info .cell .rating {
+    background-image: url(../images/rating.png);
+}
+
+.right-content .like-container {
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.right-content .like-container .box {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: black 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-content .like-container .box .img {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+}
+
+.right-content .like-container .box .like {
+    background-image: url(../images/like.png);
+}
+
+
+.right-content .like-container .box:hover {
+    border: 2px #555 solid;
+    background-color: #555;
+    transition: all 0.3s linear;
+}
+
+.right-content .title-info .cell .value,
+.right-content .title-info .cell .value a {
+    text-decoration: none;
+    color: black;
+    display: inline;
+}
+
+.right-content .title-info .cell .ref,
+.right-content .title-info .cell .ref a
+ {
+    align-self: flex-end;
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.right-content .title-info .last-cell .calendar {
+    display: inline-block;
+    background-image: url(../images/calendar.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.right-content .content-container {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.right-content .comment-container {
+    width: 100%;
+    height: auto;
+}
+
+.right-content .comment-list-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px
+}
+
+.right-content .comment-list-container .comment-container {
+    display: flex;
+    gap: 10px;
+}
+
+.right-content .comment-list-container .comment-container .icon {
+    border-radius: 35px;
+    background-color: #eee;
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+}
+
+.right-content .comment-list-container .comment-container .info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.right-content .comment-list-container .comment-container .info a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.right-content .comment-list-container .comment-container .info a:hover {
+    text-decoration: underline;
+}
