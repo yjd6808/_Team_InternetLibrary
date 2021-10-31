@@ -1,9 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CD018F40-A1AD-8632-F1AE-242407F72338" name="user">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CD018F40-A1AD-8632-F1AE-242407F72338" name="t_user">
 <createdBy>jungdo</createdBy>
 <createdTime>2021-10-05 09:51:26 UTC</createdTime>
 <generatorID>F00220D2-E842-8085-96B5-4457F2DC6272</generatorID>
 <ownerDesignName>InternetLibrary</ownerDesignName>
+<ordsAlias>user</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -66,17 +67,6 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="birth_date" id="68E5253B-3199-CA87-E30A-F60AE3676D58">
-<createdBy>jungdo</createdBy>
-<createdTime>2021-10-05 09:51:26 UTC</createdTime>
-<generatorID>FB0086FC-E196-EF66-0C79-CACC4F317EB2</generatorID>
-<ownerDesignName>InternetLibrary</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="registration_date" id="58910B73-4604-DF94-7D7A-A0950976A16A">
