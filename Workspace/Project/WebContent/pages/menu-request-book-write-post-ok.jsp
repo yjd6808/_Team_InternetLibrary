@@ -8,16 +8,19 @@
 <%@page import="bean.UserBean"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
-<c:if test="${user == null}">
-	<script type="text/javascript">
-		alert('잘못된 접근입니다. (-1)');
-		location.href='main-view.jsp';
-	</script>
-</c:if>
+<jsp:include page="session-update.jsp"></jsp:include>
 
 <%
 	UserBean user = (UserBean)session.getAttribute("user");
+
+	if (user == null ) {
+		%>
+		<script type="text/javascript">
+			alert('잘못된 접근입니다. (-1)');
+			location.href='main-view.jsp';
+		</script>
+		<%
+	}
 
 	String title = request.getParameter("title");
 	String content = request.getParameter("content");

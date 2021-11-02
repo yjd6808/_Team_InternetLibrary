@@ -168,18 +168,6 @@ public class BookILDBManager extends ILDBManager {
 			}
 			
 			String sql = sqlPrefix + sqlCondition + sqlSuffix;
-			
-			
-			// 참고사항
-			// [ResultSet 타입]
-			// 1) TYPE_FORWARD_ONLY : scroll이 불가능한 forwad only 형
-			// 2) TYPE_SCROLL_INSENSITIVE : scroll은 가능하나, 변경된 사항은 적용되지 않음
-			// 3) TYPE_SCROLL_SENSITIVE : scroll은 가능하며, 변경된 사항이 적용됨
-			
-			// [Concurrency 타입]
-			// 1) CONCUR_READ_ONLY : resultset object의 변경이 불가능
-			// 2) CONCUR_UPDATABLE : resultset object의 변경이 가능
-			
 			conn = database.getConnection();
 			ptmt = conn.prepareStatement(sql, ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
 			if (searchOption.getSearchOption() != BookSearchOption.SEARCH_OPTION_NONE)
@@ -446,8 +434,6 @@ public class BookILDBManager extends ILDBManager {
 					message = "도서 대여에 실패하였습니다.";
 				}
 			}
-			
-			
 			
 			if (status == DBResult.SUCCESS) {
 				conn.commit();

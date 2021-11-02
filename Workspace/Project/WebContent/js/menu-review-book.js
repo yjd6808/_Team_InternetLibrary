@@ -162,7 +162,7 @@ function paginationButton_Onclick(elem) {
 
 	const pageOption = $('#page-parameters').data('pp-page-option');
 	console.log(pageOption);
-	search(selectedPage, lastKeyword, lastSearchOption, pageOption);
+	search(selectedPage, pageOption);
 }
 
 function enablePaginationButton(buttonElement) {

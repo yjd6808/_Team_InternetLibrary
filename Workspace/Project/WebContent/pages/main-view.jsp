@@ -4,6 +4,7 @@
 <%@ page import="bean.BookBean"%>
 <%@ page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+<jsp:include page="session-update.jsp"></jsp:include>
 
 <!DOCTYPE html>
 <html>

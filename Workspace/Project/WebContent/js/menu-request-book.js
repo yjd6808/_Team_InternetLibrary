@@ -7,7 +7,7 @@ var lastPageOption = 10;
 var lastPageNumber = 1;
 
 // 돔 로딩 후 기존 도서 후기 게시글 목록을 가져옴
-$(() =>  search(1, 10));
+$(() =>  search(1));
 
 function wait(time) {
 	return new Promise(resolve => setTimeout(resolve, time));
@@ -15,7 +15,8 @@ function wait(time) {
 
 // pageNumber : 가져올 페이지의 데이터
 // pageOption : 10, 20, 50 페이지당 보여줄 글의 수
-async function search(pageNumber, pageOption) {
+async function search(pageNumber) {
+	const pageOption = $('#page-parameters').data('pp-page-option');
 
 	showLoading();
 	await wait(500); // 시간을 조금 주자.
@@ -112,7 +113,7 @@ function updatePagination(page) {
 	if (startPage > pageLimit)  {
 		enablePaginationButton(backButtonElement);
 		backButtonElement.off();
-		backButtonElement.on('click', () => search(startPage - 1, lastPageOption));
+		backButtonElement.on('click', () => search(startPage - 1));
 	} else {
 		disablePaginationButton(backButtonElement);
 	}
@@ -133,7 +134,7 @@ function updatePagination(page) {
 	if (endPage < page.pageCount) {
 		enablePaginationButton(forwardButtonElement);
 		forwardButtonElement.off();
-		forwardButtonElement.on('click', () => search(endPage + 1, lastPageOption));
+		forwardButtonElement.on('click', () => search(endPage + 1));
 	} else {
 		disablePaginationButton(forwardButtonElement);
 	}
@@ -149,7 +150,7 @@ function paginationButton_Onclick(elem) {
 
 	const pageOption = $('#page-parameters').data('pp-page-option');
 	console.log(pageOption);
-	search(selectedPage, lastKeyword, lastSearchOption, pageOption);
+	search(selectedPage);
 }
 
 function enablePaginationButton(buttonElement) {
@@ -175,6 +176,6 @@ function dropdownItem_OnClick(e, selectedPageOptionIdx) {
 
 	$('#page-parameters').data('pp-page-option', pageSize);
 	$('#page-option-dropdown-btn').html(pageSize + '개씩 보기');
-	search(lastPageNumber, pageSize)
+	search(lastPageNumber)
 	e.preventDefault();
 }

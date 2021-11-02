@@ -29,7 +29,7 @@ function charge() {
     const chargeBonusPoint= $(`#charge-${selected}`).data('bonus-point');
 
     // 결제창에서 뜰 상품명
-    chargeForm.find('input[name=goodname').val(`${chargePoint}P(+${chargeBonusPoint}P) ${selected}원 결제`);
+    chargeForm.find('input[name=goodname').val(`테스트 ${chargePoint}o(+${chargeBonusPoint}o)`);
 
     // 결제완료 후 전달받을 데이터
     chargeForm.find('input[name=merchantData').val(`${selected}-${chargePoint}-${chargeBonusPoint}`);

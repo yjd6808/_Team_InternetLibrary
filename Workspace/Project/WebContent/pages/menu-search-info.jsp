@@ -13,6 +13,7 @@
 <%@page import="bean.UserBean"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+<jsp:include page="session-update.jsp"></jsp:include>
 
 <%
 	UserBean userBean = (UserBean) session.getAttribute("user");
@@ -51,6 +52,10 @@
 		DBResult findMyBookResult = BookILDBManager.getInstance().getMyBook(book_uId, user_uId);
 		findMyBookResult.println();
 		myBookBean = ((DBResultWithData<MyBookBean>) findMyBookResult).getData();
+		
+		if (myBookBean != null && myBookBean.getEndDate() != null) {
+			// TODO : 대여 만료 체크
+		}
 	}
 	
 	pageContext.setAttribute("bookBean", bookBean);

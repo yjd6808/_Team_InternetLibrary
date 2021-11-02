@@ -124,7 +124,7 @@
 <script src="../js/bootstrap/bootstrap.js"></script>
 <script src="../js/jquery/jquery-3.6.0.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="../js/login.js"></script>
+<script src="../js/login.js" charset="utf-8"></script>
 
 <c:if test="${isRegister == 1}">
 	<script type="text/javascript">

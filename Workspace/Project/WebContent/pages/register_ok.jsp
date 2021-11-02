@@ -2,6 +2,8 @@
 <%@page import="database.result.DBResultError"%>
 <%@page import="database.result.DBResult"%>
 <%@page import="database.manager.UserILDBManager"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+<jsp:include page="session-update.jsp"></jsp:include>
 
 <%
 	String id = request.getParameter("id");
@@ -14,7 +16,7 @@
 	if (dbResult.getStatus() == DBResult.SUCCESS) {
 	%>
 		<script>
-			alert("М ▄Л⌡░Й╟─Л·┘Л≈░ Л└╠ЙЁ╣М∙≤Л≤─Л┼╣К▀┬К▀╓.");
+			alert("х╦©Ь╟║ют©║ ╪╨╟Ьго©╢╫ю╢о╢ы.");
 			history.go(-1);
 		</script>
 	<%
@@ -24,23 +26,22 @@
 		if (dbResult.getStatus() == DBResult.ERROR) {
 			%>
 			<script>
-				alert('М ▄Л⌡░Й╟─Л·┘Л╓▒ Л≤╓К╔≤Й╟─ К╟°Л┐²М∙≤Л≤─Л┼╣К▀┬К▀╓.');
+				alert('х╦©Ь╟║ютаъ ©ю╥Ы╟║ ╧ъ╩Щго©╢╫ю╢о╢ы.');
 				history.go(-1);
 			</script>
 			<%
 			
-		} else if (dbResult.getStatus() == 0) {
+		} else if (dbResult.getStatus() == DBResult.FAIL) {
 			%>
 			<script>
-				alert('Л²╢К╞╦ Л║╢Л·╛М∙≤К┼■ ЙЁ└Л═∙Л·┘К▀┬К▀╓.');
+				alert('юл╧л а╦юГго╢б ╟Ха╓ют╢о╢ы.');
 				history.go(-1);
 			</script>
 			<%
-			
 		} else {
 			%>
 			<script>
-				alert('М ▄Л⌡░Й╟─Л·┘Л≈░ Л▀╓М▄╗М∙≤Л≤─Л┼╣К▀┬К▀╓.');
+				alert('х╦©Ь╟║ют©║ ╫гфпго©╢╫ю╢о╢ы.');
 				history.go(-1);
 			</script>
 			<%

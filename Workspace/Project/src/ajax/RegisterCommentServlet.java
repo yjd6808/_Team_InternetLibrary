@@ -16,6 +16,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import ajax.response.AjaxRegisterCommentResponse;
+import ajax.response.AjaxResponse;
 import bean.CommentBean;
 import database.manager.CommentILDBManager;
 import database.result.DBResult;
@@ -25,22 +26,43 @@ import util.NumberParser;
 public class RegisterCommentServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	// GET / POST 학습 
+	// 		@ https://mommoo.tistory.com/60
+	// Request Body 데이터 읽는 방법  
+	// 		@ https://stackoverflow.com/questions/14525982/getting-request-payload-from-post-request-in-java-servlet
+	//		1. request.getReader() 활용 → 문자열만 전송했으니 이걸로?
+	//		2. request.getInputStream() 활용 → 바이너리 데이터 읽을때 사용
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
+			throws ServletException, IOException {
 		
 		request.setCharacterEncoding("utf-8");
-		StringBuffer jb = new StringBuffer();
+		response.setContentType("application/json");
+		response.setCharacterEncoding("UTF-8");
+		
+		boolean parsed = true;
+		
+		// 전송받은 데이터의 Body 부분을 읽은 후 문자열 버퍼에 저장한다.
+		StringBuffer buffer = new StringBuffer();
 	    String line = null;
 	    try {
 	        BufferedReader reader = request.getReader();
 	        while ((line = reader.readLine()) != null) {
-	            jb.append(line);
+	        	buffer.append(line);
 	        }
-	    } catch (Exception e) { }
+	    } catch (Exception e) { e.printStackTrace(); parsed = false; }
 
-    	JsonNode jsonNode = new ObjectMapper().readTree(jb.toString());
-    	
+	    // 잭슨 json 라이브러리를 사용하여 json 형식 문자열을 파싱하여 json 오브젝트로 변환
+	    JsonNode jsonNode = null;
 	    
-		
+	    try { jsonNode = new ObjectMapper().readTree(buffer.toString()); } 
+	    catch (Exception e) { e.printStackTrace(); parsed = false; }
+    	
+	    // 분석 실패시
+	    if (!parsed) {
+	    	response.getWriter().println(new AjaxResponse(-1, "매개변수 파싱에 실패하였습니다.").toJsonString());
+	    	return;
+	    }
+    	
 		int boardType = NumberParser.tryParseInt(jsonNode.get("boardType").asText(), -1);
 		int user_uid = NumberParser.tryParseInt(jsonNode.get("user_uid").asText(), -1);
 		int board_uid = NumberParser.tryParseInt(jsonNode.get("board_uid").asText(), -1);
@@ -49,8 +71,7 @@ public class RegisterCommentServlet extends HttpServlet {
 		
 		AjaxRegisterCommentResponse ajaxResponse = new AjaxRegisterCommentResponse();
 		
-		response.setContentType("application/json");
-		response.setCharacterEncoding("UTF-8");
+		
 		
 		if (boardType == -1 || user_uid == -1 || board_uid == -1 || content == null) {
 			ajaxResponse.setMessage("올바르지 않은 매개변수입니다.");

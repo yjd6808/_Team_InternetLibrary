@@ -1,6 +1,7 @@
 <%@page import="constant.BookBorrowTypeConstant"%>
 <%@page import="util.NumberParser"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+<jsp:include page="session-update.jsp"></jsp:include>
 <!DOCTYPE html>
 <html>
 <head>

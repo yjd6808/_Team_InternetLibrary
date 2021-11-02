@@ -6,6 +6,7 @@
 <%@page import="bean.UserBean"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<jsp:include page="session-update.jsp"></jsp:include>
 
 <%
 	UserBean userBean = (UserBean) session.getAttribute("user");

@@ -104,9 +104,10 @@ public class TimeUtil {
 		return milisec + (UNIT_SEC * sec);
 	}
 	
-	public static long get(long milisec, int type) throws Exception {
+	public static long get(long milisec, int type) 
+			throws IllegalArgumentException {
 		if (type < TYPE_MILI || type > TYPE_DAY) {
-			throw new Exception("get() / 시간 타입이 올바르지 않습니다.");
+			throw new IllegalArgumentException("get() / 시간 타입이 올바르지 않습니다.");
 		}
 		
 		switch (type) {
@@ -124,7 +125,8 @@ public class TimeUtil {
 		return milisec;
 	}
 	
-	public static long subtract(long milisec, int type, long val) throws Exception {
+	public static long subtract(long milisec, int type, long val) 
+			throws IllegalArgumentException {
 		if (type < TYPE_MILI || type > TYPE_DAY) {
 			throw new IllegalArgumentException("subtract() / 시간 타입이 올바르지 않습니다.");
 		}
@@ -160,14 +162,15 @@ public class TimeUtil {
 	
 	// startType이 endType보다 작거나 같은 타입이어야 함 (ex) startType : TYPE_HOUR, endType : TYPE_DAY)
 	
-	public static String parseDiff(long mili, int startType, int endType, boolean includeZero) throws Exception {
+	public static String parseDiff(long mili, int startType, int endType, boolean includeZero) 
+			throws IllegalArgumentException {
 		
 		if (startType < TYPE_MILI || startType > TYPE_DAY) {
 			throw new IllegalArgumentException("startType 타입이 올바르지 않습니다.");
 		}
 		
 		if (endType < TYPE_MILI || endType > TYPE_DAY) {
-			throw new IllegalArgumentException("startType 타입이 올바르지 않습니다.");
+			throw new IllegalArgumentException("endType 타입이 올바르지 않습니다.");
 		}
 		
 		if (startType > endType) {
@@ -203,7 +206,7 @@ public class TimeUtil {
 	public static void main(String[] args) throws Exception {
 		Date current = new Date(System.currentTimeMillis());
 		Date after = new Date(System.currentTimeMillis() +
-				UNIT_DAY * 0 + 
+				UNIT_DAY * 5 + 
 				UNIT_HOUR * 0 + 
 				UNIT_MIN * 55 + 
 				UNIT_SEC * 52 + 
@@ -211,5 +214,12 @@ public class TimeUtil {
 		
 		long diff = after.getTime() - current.getTime();
 		System.out.println(parseDiff(diff, TYPE_MILI, TYPE_DAY, false));
+		
+		diff = after.getTime() - current.getTime();
+		System.out.println(parseDiff(diff, TYPE_MILI, TYPE_DAY, true));
+		
+		diff = after.getTime() - current.getTime();
+		System.out.println(parseDiff(diff, TYPE_SEC, TYPE_HOUR, true));
+		
 	}
 }

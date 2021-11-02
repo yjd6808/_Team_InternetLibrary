@@ -21,10 +21,13 @@
 			<div class="main-content">
 				<jsp:include page="left-content-ranking.jsp"></jsp:include>
 				<div class="right-content" style="width: 100%">
-					<form action="/test" method="post">
-						<input name="data" value="50">
-						<input type="submit"> 
-					</form>
+
+					<form action="temp3.jsp" method="get">
+						<input type="text" value="abcd" name="a"><br>
+						<input type="text" value="abcd" name="b"><br>
+						<input type="submit" value="Àü¼Û">
+					</form>		 			
+					
 				</div>
 			</div>
 		</div>

@@ -2,6 +2,7 @@
 <%@page import="constant.MyPageConstant"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+<jsp:include page="session-update.jsp"></jsp:include>
 
 
 <c:if test="${user == null}">

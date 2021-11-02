@@ -35,7 +35,7 @@ function registerCommentBtn_OnClick(isAdmin, user_uid, writer_uid, board_uid, bo
 	}
 
 	const headers = {
-		'Content-Type': 'application/x-www-form-urlencoded'
+		'Content-Type': 'application/json'
 	};
 
 	const postData = {
@@ -234,7 +234,8 @@ function activateCommetModifyMode(elem, comment_uid) {
 				<textarea class="w-100 p-2" rows="3"  style="resize: none; font-size: small">${originalText.replaceAll('<br>', '\n')}</textarea>
 			</div>
 			<div class="col">
-				<button class="btn btn-reverse w-100" style="height: 92%" onclick="modifyComment(${writer_uid}, ${comment_uid}, ${board_uid})">수정</button>
+				<button class="btn btn-reverse w-100" style="height: 92%" 
+				onclick="modifyComment(${writer_uid}, ${comment_uid}, ${board_uid})">수정</button>
 			</div>
 		</div>
 		`);

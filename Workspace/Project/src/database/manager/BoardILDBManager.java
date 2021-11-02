@@ -807,7 +807,7 @@ public class BoardILDBManager extends ILDBManager {
 
 		try {
 
-			String sql = "select count(*) from t_review_board ";
+			String sql = "select count(*) from t_request_board ";
 
 			conn = database.getConnection();
 			stmt = conn.createStatement();

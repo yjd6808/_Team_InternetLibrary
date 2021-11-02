@@ -61,6 +61,27 @@ function likebox_OnMouseLeave() {
     });
 }
 
+function calcDiffTime(canLikeTime) {
+    const current = new Date();
+    const likeDate = new Date(canLikeTime);
+
+    const diff = likeDate - current;
+    let milisec = diff;
+
+    let hh = Math.floor(milisec / 1000 / 60 / 60);
+    milisec -= hh * 1000 * 60 * 60;
+    let mm = Math.floor(milisec / 1000 / 60);
+    milisec -= mm * 1000 * 60;
+    let ss = Math.floor(milisec / 1000);
+    milisec -= ss * 1000;
+
+    return {
+        hh:hh,
+        mm:mm,
+        ss:ss
+    }
+}
+
 // 자바스크립트 시간차이 계산방법
 // https://stackoverflow.com/questions/19004950/how-to-compare-time-in-javascript
 function likeReviewBoard(user_uid, board_uid) {
@@ -77,20 +98,9 @@ function likeReviewBoard(user_uid, board_uid) {
         if (canLikeTime === -1) {
             alert('이미 좋아요를 하셨습니다.')
         } else {
-            var current = new Date();
-            var likeDate = new Date(canLikeTime);
-    
-            var diff = likeDate - current;
-            var milisec = diff;
-    
-            var hh = Math.floor(milisec / 1000 / 60 / 60);
-            milisec -= hh * 1000 * 60 * 60;
-            var mm = Math.floor(milisec / 1000 / 60);
-            milisec -= mm * 1000 * 60;
-            var ss = Math.floor(milisec / 1000);
-            milisec -= ss * 1000;
-    
-            alert('24시간 내로 이미 좋아요를 하셨습니다.\n남은 시간 : ' + hh + "시간 " + mm + "분 " + ss + "초");
+            let diff = calcDiffTime(canLikeTime);
+            alert('24시간 내로 이미 좋아요를 하셨습니다.\n남은 시간 : ' + 
+                diff.hh + "시간 " + diff.mm + "분 " + diff.ss + "초");
         }
         return
     }
@@ -103,12 +113,10 @@ function likeReviewBoard(user_uid, board_uid) {
             console.log(response.data);
             const likeCount = response.data.totalLikeCount;
             $('#like-count').html(likeCount);
-            
 
             // 당장 현재페이지에서 좋아요를 한 경우에는 현재시간 + 1일 해서 대입해놓는다.
             // 굳이 서버에서 계산해서 줄필요 없음
-            var currentDate = new Date();
-            var milisec = currentDate;
+            var milisec = new Date().getTime();
             milisec += 1000 * 60 * 60 * 24;
             
             $('#page-parameters').data('can-like', false);

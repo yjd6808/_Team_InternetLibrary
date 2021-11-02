@@ -3,6 +3,7 @@
 <%@page import="constant.MyPageConstant"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+<jsp:include page="session-update.jsp"></jsp:include>
 
 
 <c:if test="${user == null}">
@@ -58,7 +59,7 @@
 					<h4 class="mt-3 mb-3 fw-bold ms-1">회원 정보 변경</h4>
 					<div class="border-container px-4">
 						<div class="w-100 d-flex justify-content-center py-3">
-							<form method="post" action="menu-mypage-change-account-info-ok.jsp">
+							<form name="change_form" method="post" action="menu-mypage-change-account-info-ok.jsp">
 								<div class="d-flex flex-column gap-2" style="width: 450px">
 									<div class="input-group align-items-center gap-2">
 										<span class="d-inline-block input-group-text text-end" style="width: 120px">아이디</span>
@@ -66,25 +67,50 @@
 									</div>
 									<div class="input-group align-items-center gap-2">
 										<span class="d-inline-block input-group-text text-end" style="width: 120px">비밀번호</span> 
-										<input class="form-control" type="password" name="pass"/>
+										<input class="form-control" type="password" name="pass" required="required"/>
 									</div>
 									<div class="input-group align-items-center gap-2">
 										<span class="d-inline-block input-group-text text-end" style="width: 120px">비밀번호 확인</span> 
-										<input class="form-control" type="password" />
+										<input class="form-control" type="password" name="pass_ok" required="required"/>
 									</div>
 									<div class="input-group align-items-center gap-2">
 										<span class="d-inline-block input-group-text text-end" style="width: 120px">이름</span> 
-										<input class="form-control" type="text" value="<%= userBean.getName() %>" name="name"/>
+										<input class="form-control" type="text" value="<%= userBean.getName() %>" name="name" required="required"/>
 									</div>
 									<div class="input-group align-items-center gap-2">
 										<span class="d-inline-block input-group-text text-end" style="width: 120px">이메일</span> 
-										<input class="form-control" type="text" value="<%= userBean.getEmail() %>" name="email"/>
+										<input class="form-control" type="text" value="<%= userBean.getEmail() %>" name="email" required="required"/>
 									</div>
 								</div>
 
+								<script type="text/javascript">
+									function check() {
+										if ($('input[name=pass]').val().trim().length == 0) {
+											alert('비밀번호를 입력해주세요');
+											return;
+										}
+										
+										if ($('input[name=pass_ok]').val().trim().length == 0) {
+											alert('비밀번호 확인을 입력해주세요');
+											return;
+										}
+										
+										if ($('input[name=pass]').val().trim() != $('input[name=pass_ok]').val().trim()) {
+											alert('비밀번호가 일치하지 않습니다.');
+											return;
+										}
+										
+										if ($('input[name=email]').val().trim().length == 0) {
+											alert('이메일을 입력해주세요');
+											return;
+										}
+										
+										document.change_form.submit();
+									}
+								</script>
 								<div class="text-center">
-									<input class="btn btn-reverse mt-3 me-3" type="submit" value="변경">
-									<button class="btn btn-reverse mt-3" onclick="location.href='main-view.jsp'">취소</button>
+									<button type="button" class="btn btn-reverse mt-3 me-3" onclick="check()">변경</button>
+									<button type="button" class="btn btn-reverse mt-3" onclick="location.href='main-view.jsp'">취소</button>
 								</div>
 							</form>
 						</div>

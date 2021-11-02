@@ -8,6 +8,7 @@
 <%@ page import="com.inicis.std.util.HttpUtil"%>
 <%@ page import="java.util.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<jsp:include page="session-update.jsp"></jsp:include>
 
 <script src="../js/jquery/jquery-3.6.0.js"></script>
 <script type="text/javascript">

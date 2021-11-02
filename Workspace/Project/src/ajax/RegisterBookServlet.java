@@ -1,5 +1,6 @@
 //작성자 : 윤정도
 
+
 /*
 	POST 요청 : 업로드 진행 
 	GET  요청 : 업로드 진행상황 확인
@@ -18,6 +19,7 @@
 package ajax;
 
 import java.io.File;
+
 
 
 import java.io.IOException;
@@ -87,6 +89,7 @@ public class RegisterBookServlet extends HttpServlet {
 
 	// 업로드 요청처리
 	protected void doPost(HttpServletRequest req, HttpServletResponse rsesp) throws ServletException, IOException {
+		
 		// 업로드 ID용이다.
 		String id = req.getParameter("startTime");
 		String progreeAttrId = id + 1;
@@ -167,7 +170,7 @@ public class RegisterBookServlet extends HttpServlet {
 			}
 			
 			if (fileMap.containsKey("imageFileName")) {
-				File f = new File(imageUploadFullPath + File.separator + formFields.getOrDefault("dataFileName", "not_found"));
+				File f = new File(imageUploadFullPath + File.separator + formFields.getOrDefault("imageFileName", "not_found"));
 				if (f.exists()) {
 					f.delete();
 				}
@@ -312,7 +315,7 @@ class FormAttribute {
 		bookBean.setBorrowPoint(Integer.parseInt(formFields.getOrDefault("borrow_point", "-1")));
 		bookBean.setBuyPoint(Integer.parseInt(formFields.getOrDefault("buy_point", "-1")));
 		bookBean.setDataFileName(formFields.getOrDefault("dataFileName", "empty.data"));
-		bookBean.setImageFileName(formFields.getOrDefault("dataFileName", "empty.image"));
+		bookBean.setImageFileName(formFields.getOrDefault("imageFileName", "empty.image"));
 	}
 }
 

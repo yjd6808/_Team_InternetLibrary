@@ -89,7 +89,7 @@ function upload() {
     uploadForm.action = 'http://121.145.173.195:8087/RegisterBookServlet?startTime=' + startTime;
     uploadForm.target = 'target-frame';
     uploadForm.submit();
-    uploadProgress = setInterval(uploadCheck, 50, startTime);
+    uploadProgress = setInterval(uploadCheck, 200, startTime);
 
     $('#register-book-submit-btn').html('&nbsp;');
     $('#file-upload-progress').css('visibility', 'visible');
@@ -160,14 +160,14 @@ function cleanupUploading(msg) {
     $('#file-upload-progressbar').css('visibility', 'visible');
 
 
-    $('#upload-form input[name=name]').val('');;
-    $('#upload-form input[name=writer_name]').val('');
-    $('#upload-form input[name=publisher_name]').val('');
-    $('#upload-form input[name=b_code]').val('');
-    $('#upload-form input[name=borrow_point]').val('');
-    $('#upload-form input[name=buy_point]').val('');
-    $('#upload-form input[name=imageFileName]').val('');
-    $('#upload-form input[name=dataFileName]').val('');
+    //$('#upload-form input[name=name]').val('');;
+    //$('#upload-form input[name=writer_name]').val('');
+    //$('#upload-form input[name=publisher_name]').val('');
+    //$('#upload-form input[name=b_code]').val('');
+    //$('#upload-form input[name=borrow_point]').val('');
+    //$('#upload-form input[name=buy_point]').val('');
+    //$('#upload-form input[name=imageFileName]').val('');
+    //$('#upload-form input[name=dataFileName]').val('');
     
     alert(msg);
 

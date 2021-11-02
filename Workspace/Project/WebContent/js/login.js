@@ -45,5 +45,5 @@ function register_submit() {
         return;
     }
 
-    $('#register-form').unbind('submit').submit();
+    $('#register-form').submit();
 }

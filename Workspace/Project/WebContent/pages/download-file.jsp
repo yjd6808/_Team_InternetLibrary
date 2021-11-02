@@ -9,6 +9,8 @@
 <%@ page trimDirectiveWhitespaces="true" %>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+    
+<jsp:include page="session-update.jsp"></jsp:include>
 <!DOCTYPE html>
 <%    
 	String fileName = HanConv.toKor((String)request.getParameter("filepath"));

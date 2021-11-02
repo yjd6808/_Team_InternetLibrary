@@ -8,16 +8,19 @@
 <%@page import="database.result.DBResult"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
-<c:if test="${user == null}">
-	<script type="text/javascript">
-		alert('잘못된 접근입니다. (-1)');
-		location.href='main-view.jsp';
-	</script>
-</c:if>
+<jsp:include page="session-update.jsp"></jsp:include>
 
 <%
 	UserBean user = (UserBean)session.getAttribute("user");
+
+	if (user == null ) {
+		%>
+		<script type="text/javascript">
+			alert('잘못된 접근입니다. (-1)');
+			location.href='main-view.jsp';
+		</script>
+		<%		
+	}
 
 	int book_uid = NumberParser.tryParseInt(request.getParameter("book_uid"), -1);
 	float book_score = NumberParser.tryParseFloat(request.getParameter("book_score"), -2.0f);
