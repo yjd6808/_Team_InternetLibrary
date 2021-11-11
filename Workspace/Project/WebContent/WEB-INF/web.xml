@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name>Project</display-name>
+
+	<!-- IP:포트로 접속했을때 뜰 페이지 -->
+	<welcome-file-list>
+		<welcome-file>pages/main-view.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- 테스트 서블릿 등록 -->
+	<servlet>
+		<servlet-name>TestServlet</servlet-name>
+		<servlet-class>ajax.JsonAjaxTestServlet</servlet-class>
+	</servlet>
+	
+	<!-- 테스트 서블릿 URL 매핑 -->
+	<servlet-mapping>
+		<servlet-name>TestServlet</servlet-name>
+		<url-pattern>/TestServlet</url-pattern>
+	</servlet-mapping>
+
+	<context-param>
+		<!-- 왼쪽 사이드바에서 보여줄 도서 랭킹 갯수 -->
+		<param-name>LEFT_CONTENT_MAX_RANKING</param-name>
+		<param-value>3</param-value>
+	</context-param>
+	<context-param>
+	
+		<!-- 대여시 몇일동안 대여 가능한지 -->
+		<param-name>MAX_BORROW_DAY</param-name>
+		<param-value>7</param-value>
+	</context-param>
+	
+</web-app>

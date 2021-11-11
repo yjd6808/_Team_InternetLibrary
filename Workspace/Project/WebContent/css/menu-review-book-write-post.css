@@ -1,0 +1,36 @@
+.modal .modal-select-book {
+    max-width: 700px;
+    margin: auto;
+}
+
+.modal .modal-select-score {
+    max-width: 300px;
+    margin: auto;
+}
+
+#modal-select-score .rating-container {
+    position: absolute;
+    display: inline-block;
+}
+
+#modal-select-score .rating-star-empty {
+    position: absolute;
+    background-image: url(../images/black-star-empty.png);
+    background-size: 50px;
+    height: 50px;
+    background-repeat: repeat;
+    padding: 0;
+}
+
+#modal-select-score .rating-star-fill {
+    position: absolute;
+    background-image: url(../images/black-star-fill.png);
+    background-size: 50px;
+    height: 50px;
+    background-repeat: repeat;
+    padding: 0;
+}
+
+#modal-select-score .op-0 {
+    opacity: 0;
+}

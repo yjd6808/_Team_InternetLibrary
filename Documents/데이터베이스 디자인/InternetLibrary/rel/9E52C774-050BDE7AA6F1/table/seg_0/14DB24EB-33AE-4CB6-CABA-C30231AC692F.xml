@@ -1,9 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="14DB24EB-33AE-4CB6-CABA-C30231AC692F" name="request_board">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="14DB24EB-33AE-4CB6-CABA-C30231AC692F" name="t_request_board">
 <createdBy>jungdo</createdBy>
 <createdTime>2021-10-05 09:51:26 UTC</createdTime>
 <generatorID>FDD1A818-FEDA-731C-E7BB-343A63ED3F45</generatorID>
 <ownerDesignName>InternetLibrary</ownerDesignName>
+<ordsAlias>request_board</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>

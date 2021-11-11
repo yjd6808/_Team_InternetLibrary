@@ -1,0 +1,43 @@
+@import 'common.css';
+
+body {
+    background-image: url(../images/login-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.input-group-text {
+    background-color: var(--default-btn-bg-color);
+    color: var(--default-btn-text-color);
+}
+
+.surrounded {
+    border: var(--default-btn-bg-color) 5px solid;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.login-btn {
+    width: 80px;
+}
+
+.register-btn {
+    width: 80px;
+}
+
+#ck-save-id-pass {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+

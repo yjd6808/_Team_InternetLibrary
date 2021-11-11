@@ -1,0 +1,40 @@
+
+.left-content .card {
+    border: 2px solid #000;
+}
+
+.left-content .card:hover {
+    box-shadow: 2px 2px 10px;
+}
+
+.left-content .rating-span {
+    font-size: 16px;
+}
+
+.left-content .rating-score {
+    font-size: 11px;
+    align-self: flex-end;
+}
+
+.left-content .rating-container {
+    position: relative;
+    display: inline-block;
+}
+
+.left-content .rating-star-empty {
+    position: absolute;
+    background-image: url(../images/black-star-empty.png);
+    background-size: 20px;
+    height: 20px;
+    background-repeat: repeat;
+    padding: 0;
+}
+
+.left-content .rating-star-fill {
+    position: absolute;
+    background-image: url(../images/black-star-fill.png);
+    background-size: 20px;
+    height: 20px;
+    background-repeat: repeat;
+    padding: 0;
+}

@@ -1,9 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CAC88A27-BF8C-0812-BE45-32B0F2CB2039" name="charge_point_log">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CAC88A27-BF8C-0812-BE45-32B0F2CB2039" name="t_charge_point_log">
 <createdBy>jungdo</createdBy>
 <createdTime>2021-10-05 09:51:26 UTC</createdTime>
 <generatorID>D2ECEE07-5171-88B8-6D1B-9592671C2381</generatorID>
 <ownerDesignName>InternetLibrary</ownerDesignName>
+<ordsAlias>charge_point_log</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
